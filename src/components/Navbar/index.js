@@ -1,15 +1,13 @@
 import React, { useState, useEffect } from "react";
-import { FaBars } from "react-icons/fa";
 import {
   Nav,
   NavbarContainer,
-  MobileIcon,
   NavMenu,
   NavItem,
   NavLinks,
 } from "./NavbarElements";
 
-const Navbar = ({ toggle }) => {
+const Navbar = () => {
   const [scrollNav, setScrollNav] = useState(false);
 
   const changeNav = () => {
@@ -28,9 +26,6 @@ const Navbar = ({ toggle }) => {
     <>
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
-          <MobileIcon onClick={toggle}>
-            <FaBars />
-          </MobileIcon>
           <NavMenu>
             <NavItem>
               <NavLinks

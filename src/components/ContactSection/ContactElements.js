@@ -6,7 +6,7 @@ export const ContactContainer = styled.div`
   color: #fff;
   background: #16202d;
   width: 100%;
-  min-height: 90vh;
+  min-height: 100vh;
   display: flex;
   padding: 0 20px;
   flex-direction: column;
@@ -79,7 +79,7 @@ export const CircleDiv = styled.a`
   transition: all 0.2s ease-in-out;
   :hover {
     outline: 0;
-    box-shadow: 0 0 10px 4px#3498db;
+    box-shadow: 0 0 10px 4px #3498db;
   }
 `;
 export const GitIcon = styled(FaGithub)`
