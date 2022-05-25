@@ -1,16 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono+JP:wght@400;700&display=swap');
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+:root {
+  --background: white;
+  --text-primary: black;
+  --text-secondary: royalblue;
+  --accent: purple;
+}
+[data-theme='dark'] {
+  --background: black;
+  --text-primary: white;
+  --text-secondary: grey;
+  --accent: darkred;
+}
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
   margin: 0;
-  background-color: #e0e9f5;
 }
 
 main {
@@ -23,4 +37,4 @@ h2,
 h3,
 p {
   color: #042b5f;
-}
+} */
