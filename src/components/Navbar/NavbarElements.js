@@ -13,6 +13,7 @@ export const Nav = styled.nav`
   top: 0;
   z-index: 10;
   transition: 0.5s all ease;
+
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
   }
@@ -30,6 +31,7 @@ export const NavbarContainer = styled.div`
 
 export const MobileIcon = styled.div`
   display: none;
+
   @media screen and (max-width: 768px) {
     display: block;
     position: absolute;
@@ -67,6 +69,7 @@ export const NavLinks = styled(LinkS)`
   height: 100%;
   cursor: pointer;
   transition: 0.2s;
+
   &.active {
     border-bottom: 2px solid #3498db;
     /* box-shadow: 0 12px 7px 6px #3498db; */

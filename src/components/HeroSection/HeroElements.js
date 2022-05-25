@@ -11,6 +11,7 @@ export const HeroContainer = styled.div`
   position: relative;
   padding: 0 20px;
   z-index: 1;
+
   :before {
     content: "";
     position: absolute;
@@ -147,6 +148,6 @@ export const Btn = styled(LinkS)`
   :focus {
     color: #fff;
     outline: 0;
-    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px#3498db;
   }
 `;

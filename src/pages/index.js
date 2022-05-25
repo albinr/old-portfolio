@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import AboutSection from "../components/AboutSection";
 import HeroSection from "../components/HeroSection";
 import Navbar from "../components/Navbar";
-// import PortfolioSection from "../components/PortfolioSection";
+import PortfolioSection from "../components/PortfolioSection";
 import Sidebar from "../components/Sidebar";
-// import ContactSection from "../components/ContactSection";
-// import Footer from "../components/Footer";
+import ContactSection from "../components/ContactSection";
+import Footer from "../components/Footer";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,9 +20,9 @@ const Home = () => {
       <Navbar toggle={toggle} />
       <HeroSection />
       <AboutSection />
-      {/* <PortfolioSection />
+      <PortfolioSection />
       <ContactSection />
-      <Footer /> */}
+      <Footer />
     </>
   );
 };
