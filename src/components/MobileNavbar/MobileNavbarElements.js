@@ -25,7 +25,7 @@ export const NavbarContainer = styled.div`
   background-color: rgba(23,26,33, 0.9);
   border-radius: 20px;
   z-index: 1;
-  padding: 0 20px;
+  padding: 0 16px;
   /* max-width: 1100px; */
 `;
 
