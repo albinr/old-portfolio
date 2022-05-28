@@ -8,7 +8,6 @@ const AboutSection = () => {
       <AboutWrapper>
         <AboutText>
           <h1>About Me</h1>
-          <p>test</p>
           <br />
           <p>
             Hi, my name is Albin Ryberg. I am currently studying front-end

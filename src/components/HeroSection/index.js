@@ -2,16 +2,19 @@ import Video from "../../videos/video.mp4";
 
 import {
   HeroContainer,
-  HeroBg,
-  VideoBg,
+  // HeroBg,
+  // VideoBg,
 } from "./HeroElements";
 
 const HeroSection = () => {
   return (
     <HeroContainer id="home">
-      <HeroBg>
+      <div>
+        <p>hello</p>
+      </div>
+      {/* <HeroBg>
         <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
-      </HeroBg>
+      </HeroBg> */}
     </HeroContainer>
   );
 };
