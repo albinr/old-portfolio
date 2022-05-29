@@ -48,9 +48,12 @@ export const NavLinks = styled(LinkS)`
   color: gray;
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 8px;
   padding: 0 1rem;
+  width: 60px;
   height: 100%;
   cursor: pointer;
   transition: 0.2s;

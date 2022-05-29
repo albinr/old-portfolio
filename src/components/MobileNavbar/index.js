@@ -8,6 +8,8 @@ import {
 } from "./MobileNavbarElements";
 import { MdHome, MdAccountCircle, MdChat, MdAssignment } from "react-icons/md";
 
+const ICON_SIZE = 30;
+
 const MobileNavbar = () => {
 //   const [scrollNav, setScrollNav] = useState(false);
 
@@ -37,7 +39,8 @@ const MobileNavbar = () => {
                 duration={500}
                 exact="true"
               >
-                <MdHome />
+                <MdHome size={ICON_SIZE} />
+                <p>HOME</p>
               </NavLinks>
             </NavItem>
             <NavItem>
@@ -48,7 +51,8 @@ const MobileNavbar = () => {
                 duration={500}
                 exact="true"
               >
-                <MdAccountCircle />
+                <MdAccountCircle size={ICON_SIZE}/>
+                <p>ABOUT</p>
               </NavLinks>
             </NavItem>
             <NavItem>
@@ -59,7 +63,8 @@ const MobileNavbar = () => {
                 duration={500}
                 exact="true"
               >
-                <MdAssignment />
+                <MdAssignment  size={ICON_SIZE}/>
+                <p>PORTFOLIO</p>
               </NavLinks>
             </NavItem>
             <NavItem>
@@ -70,7 +75,8 @@ const MobileNavbar = () => {
                 duration={500}
                 exact="true"
               >
-                <MdChat />
+                <MdChat size={ICON_SIZE}/>
+                <p>CONTACT</p>
               </NavLinks>
             </NavItem>
           </NavMenu>

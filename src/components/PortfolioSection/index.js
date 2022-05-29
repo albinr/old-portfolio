@@ -26,6 +26,15 @@ const PortfolioSection = () => {
           </Title>
           <Cards>
             <CardDiv>
+              <ALink>
+                <Card 
+                title="Gains"
+                body="Gym-app"
+                year="2022"
+                />
+              </ALink>
+            </CardDiv>
+            <CardDiv>
               <ALink
                 href="https://github.com/AlbinR/portfolio-v2"
                 target="_blank"
