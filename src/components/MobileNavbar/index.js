@@ -40,7 +40,7 @@ const MobileNavbar = () => {
                 exact="true"
               >
                 <MdHome size={ICON_SIZE} />
-                <p>HOME</p>
+                <p>Home</p>
               </NavLinks>
             </NavItem>
             <NavItem>
@@ -52,7 +52,7 @@ const MobileNavbar = () => {
                 exact="true"
               >
                 <MdAccountCircle size={ICON_SIZE}/>
-                <p>ABOUT</p>
+                <p>About</p>
               </NavLinks>
             </NavItem>
             <NavItem>
@@ -64,7 +64,7 @@ const MobileNavbar = () => {
                 exact="true"
               >
                 <MdAssignment  size={ICON_SIZE}/>
-                <p>PORTFOLIO</p>
+                <p>Portfolio</p>
               </NavLinks>
             </NavItem>
             <NavItem>
@@ -76,7 +76,7 @@ const MobileNavbar = () => {
                 exact="true"
               >
                 <MdChat size={ICON_SIZE}/>
-                <p>CONTACT</p>
+                <p>Contact</p>
               </NavLinks>
             </NavItem>
           </NavMenu>
