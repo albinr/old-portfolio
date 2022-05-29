@@ -11,7 +11,7 @@ import {
   ImgOverlay
 } from "./newCardElements";
 
-export const Card = ({ title, imageUrl, body, year, imgHoverTxt }) => {
+export const Card = ({ title, imageUrl, body, year, imgHoverTxt,gitLink }) => {
   return (
     <>
       <CardContainer>
@@ -21,7 +21,7 @@ export const Card = ({ title, imageUrl, body, year, imgHoverTxt }) => {
             <CardText>{body}</CardText>
           </CardContent>
           <IconBox>
-            <GitIcon />
+            <GitIcon href={gitLink}/>
              <p>{year}</p>
           </IconBox>
         </CardInfoBox>

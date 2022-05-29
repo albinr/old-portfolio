@@ -7,17 +7,19 @@ import {
   // VideoBg,
 } from "./HeroElements";
 import Card from "../newCards";
+import { Button } from "../Button";
 
 const HeroSection = () => {
   return (
     <HeroContainer id="home">
      <Card
-     title="test"
-     body="test test test test test test test test test test test test test"
+     title="Gains"
+     body="Gym-App made as final project in Front End course at KYH "
      year="2022"
      imgHoverTxt="Visit Live Website"
      imageUrl={PortfolioImg}
      />
+     <Button Title="Press me"/>
 
       {/* <HeroBg>
         <VideoBg autoPlay loop muted src={Video} type="video/mp4" />

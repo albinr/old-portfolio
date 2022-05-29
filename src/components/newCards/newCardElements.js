@@ -80,8 +80,8 @@ export const ImageContainer = styled.div`
   border-top-left-radius: 50%;
   border-bottom-left-radius: 50%;
   overflow: hidden;
-  height: 200;
-  width: 200;
+  height: 100%;
+  width: 100%;
   img {
     width: 100%;
     height: 100%;
