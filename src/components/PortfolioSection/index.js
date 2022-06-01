@@ -4,6 +4,7 @@ import BevNewsImg from "../../images/bevnews.jpg";
 import QuireImg from "../../images/quire.jpg";
 import CargoImg from "../../images/Cargo.jpg";
 import CalculatorImg from "../../images/Calculator.PNG";
+import Gains from "../../images/Gains.png";
 
 import {
   PortfolioContainer,
@@ -11,7 +12,6 @@ import {
   Title,
   Cards,
   CardDiv,
-  ALink,
 } from "./PortfolioElements";
 
 import Card from "../Cards";
@@ -25,86 +25,64 @@ const PortfolioSection = () => {
             <h1>Portfolio</h1>
           </Title>
           <Cards>
+            
             <CardDiv>
-              <ALink>
-                <Card 
-                title="Gains"
-                body="Gym-app"
-                year="2022"
-                />
-              </ALink>
-            </CardDiv>
-            <CardDiv>
-              <ALink
-                href="https://github.com/AlbinR/portfolio-v2"
-                target="_blank"
-              >
                 <Card
                   title="Porfolio"
-                  body="The code for this portfolio site."
-                  year="2021"
+                  body="The code for this portfolio site. Made with React and React-scroll."
+                  year="2022"
                   imageUrl={PortfolioImg}
-                />
-              </ALink>
-
-              <ALink
-                href="https://github.com/Viktor-Hultman/BevNews"
-                target="_blank"
-              >
+                  gitLink="https://github.com/AlbinR/portfolio"
+                  siteLink="https://albinryberg.surge.sh/"
+                />  
                 <Card
                   title="BevNews"
                   body="Tracks words in The Guardian."
                   year="2020"
                   imageUrl={BevNewsImg}
+                  gitLink="https://github.com/Viktor-Hultman/BevNews"
+                  siteLink="https://bevnews.surge.sh/landing"
                 />
-              </ALink>
-            </CardDiv>
-            <CardDiv>
-              <ALink
-                href="https://github.com/Voltair88/fe20tp1_-Vellum-"
-                target="_blank"
-              >
                 <Card
                   title="Quire"
                   body="Online note-taking app."
                   year="2020"
                   imageUrl={QuireImg}
+                  gitLink="https://github.com/Voltair88/fe20tp1_-Vellum-"
+                  siteLink="http://vellum.surge.sh/"
                 />
-              </ALink>
-
-              <ALink href="https://github.com/AlbinR/cargo" target="_blank">
+            </CardDiv>
+            <CardDiv>
                 <Card
                   title="Cargo"
                   body="Figma prototype made in react."
                   year="2021"
                   imageUrl={CargoImg}
+                  gitLink="https://github.com/AlbinR/cargo"
                 />
-              </ALink>
-            </CardDiv>
-
-            <CardDiv>
-              <ALink
-                href="https://github.com/AlbinR/react-calculator"
-                target="_blank"
-              >
                 <Card
                   title="Calculator"
                   body="Calculator made in react. (with tutorial)"
                   year="2021"
                   imageUrl={CalculatorImg}
+                  gitLink="https://github.com/AlbinR/react-calculator"
                 />
-              </ALink>
-              <ALink
-                href="https://github.com/AlbinR/react-calculator"
-                target="_blank"
-              >
                 <Card
                   title="Camera"
                   body="Camera App made in react native. (with tutorial)"
                   year="2021"
-                  // imageUrl={}
+                  gitLink="https://github.com/AlbinR/react-native-camera-app"
                 />
-              </ALink>
+            </CardDiv>
+            <CardDiv>
+                <Card 
+                title="Gains"
+                body="Gym-app made with ReactNative. Final project for polytechnic course."
+                year="2022"
+                imageUrl={Gains}
+                gitLink="https://github.com/AlbinR/Gains"
+                siteLink="https://expo.dev/@kingstinct/gains?serviceType=classic&distribution=expo-go"
+                />
             </CardDiv>
           </Cards>
         </PortfolioWrapper>

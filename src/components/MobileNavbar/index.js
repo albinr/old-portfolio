@@ -6,7 +6,7 @@ import {
   NavItem,
   NavLinks,
 } from "./MobileNavbarElements";
-import { MdHome, MdAccountCircle, MdChat, MdAssignment } from "react-icons/md";
+import { MdHome, MdAccountCircle, MdChat, MdBook } from "react-icons/md";
 
 const ICON_SIZE = 30;
 
@@ -63,7 +63,7 @@ const MobileNavbar = () => {
                 duration={500}
                 exact="true"
               >
-                <MdAssignment  size={ICON_SIZE}/>
+                <MdBook  size={ICON_SIZE}/>
                 <p>Portfolio</p>
               </NavLinks>
             </NavItem>

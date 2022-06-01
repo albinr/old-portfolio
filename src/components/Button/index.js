@@ -1,5 +1,4 @@
 import React from "react";
-import {StyledButton} from "./ButtonElements"
 
 export const Button = ({
     border,
@@ -8,17 +7,19 @@ export const Button = ({
     height,
     onClick, 
     radius,
+    padding,
     width}) => {
     return( 
         <button 
-        onClick={onClick}
-         style={{
-         backgroundColor: color,
-         border,
-         borderRadius: radius,
-         height,
-         width
-        }} >
+            onClick={onClick}
+            style={{
+            backgroundColor: color,
+            border,
+            borderRadius: radius,
+            height,
+            width,
+            padding,
+        }}>
         {children}
         </button>
     );

@@ -34,7 +34,7 @@ export const Title = styled.div`
 
 export const Cards = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: start;
   flex-direction: column;
   flex-wrap: wrap;
 `;

@@ -1,4 +1,6 @@
 import React from "react";
+import { Button } from "../ButtonElements";
+import { FaGithub } from "react-icons/fa";
 import {
   CardContainer,
   ImageContainer,
@@ -6,7 +8,7 @@ import {
   CardText,
   CardInfoBox,
   CardContent,
-  IconBox,
+  BtnBox,
   GitIcon,
   ImgOverlay
 } from "./newCardElements";
@@ -15,20 +17,21 @@ export const Card = ({ title, imageUrl, body, year, imgHoverTxt,gitLink }) => {
   return (
     <>
       <CardContainer>
+        <ImageContainer>
+            <ImgOverlay>{imgHoverTxt}</ImgOverlay>
+          <img src={imageUrl} alt=""></img>
+        </ImageContainer>
         <CardInfoBox>
           <CardContent>
             <CardTitle>{title}</CardTitle>
             <CardText>{body}</CardText>
           </CardContent>
-          <IconBox>
-            <GitIcon href={gitLink}/>
+          <BtnBox>
+            <Button primary dark><FaGithub size={30}/> GitHub</Button>
+            <Button><FaGithub size={30}/>Live Page</Button>
              <p>{year}</p>
-          </IconBox>
+          </BtnBox>
         </CardInfoBox>
-        <ImageContainer>
-            <ImgOverlay>{imgHoverTxt}</ImgOverlay>
-          <img src={imageUrl} alt=""></img>
-        </ImageContainer>
       </CardContainer>
     </>
   );

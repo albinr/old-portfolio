@@ -1,29 +1,71 @@
-// import Video from "../../videos/video.mp4";
-import PortfolioImg from "../../images/portfoliosite.jpg";
+import Video from "../../videos/video.mp4";
+import Image from "../../images/albin.jpg";
 
 import {
   HeroContainer,
-  // HeroBg,
-  // VideoBg,
+  HeroBg,
+  VideoBg,
+  HeroContent,
+  Header,
+  Text,
+  Title,
+  Name,
+  Intro,
+  ImageContainer,
+  ImageAr,
+  Buttons,
+  Underline,
 } from "./HeroElements";
-import Card from "../newCards";
-import { Button } from "../Button";
+import { ScrollButton } from "../ScrollButtonElements";
+import { Button } from "../ButtonElements";
 
 const HeroSection = () => {
   return (
     <HeroContainer id="home">
-     <Card
-     title="Gains"
-     body="Gym-App made as final project in Front End course at KYH "
-     year="2022"
-     imgHoverTxt="Visit Live Website"
-     imageUrl={PortfolioImg}
-     />
-     <Button>hello</Button>
-
-      {/* <HeroBg>
+      <HeroBg>
         <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
-      </HeroBg> */}
+      </HeroBg>
+      <HeroContent>
+        <Header>
+          <Text>
+            <Title>
+              <h1>Hello,</h1>
+            </Title>
+            <Name>
+              <h2>
+                my name is <Underline>Albin Ryberg</Underline>.
+              </h2>
+            </Name>
+            <Intro>
+              <h2>
+                Front-end developer studying at&nbsp;
+                <Underline>KYH</Underline>.
+              </h2>
+            </Intro>
+          </Text>
+          <ImageContainer>
+            <ImageAr src={Image} alt="Albin" type="image/jpg" />
+          </ImageContainer>
+        </Header>
+        <Buttons>
+          <ScrollButton
+            to="about"
+            smooth={true}
+            spy={true}
+            duration={500}
+            exact="true"
+            offset={-80}
+            primary
+            dark
+          >
+            More
+          </ScrollButton>
+          <Button>
+            Download CV
+          </Button>
+        </Buttons>
+      </HeroContent>
+      
     </HeroContainer>
   );
 };

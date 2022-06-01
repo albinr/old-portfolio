@@ -8,10 +8,11 @@ import {
   CardContent,
   IconBox,
   GitIcon,
-  CardAge,
+  Year,
+  AButton,
 } from "./CardElements";
 
-export const Card = ({ title, imageUrl, body, year }) => {
+export const Card = ({ title, imageUrl, body, year, gitLink, siteLink }) => {
   return (
     <>
       <CardContainer>
@@ -21,15 +22,14 @@ export const Card = ({ title, imageUrl, body, year }) => {
             <CardText>{body}</CardText>
           </CardContent>
           <IconBox>
-            <GitIcon />
-            <CardAge>
-              <p>{year}</p>
-            </CardAge>
+            <AButton  target="_blank" primary dark href={gitLink} ><GitIcon/> GitHub</AButton>
+            {siteLink ? <AButton href={siteLink} target="_blank">Live Demo</AButton> : null}
           </IconBox>
         </CardInfoBox>
         <ImageContainer>
           <img src={imageUrl} alt=""></img>
         </ImageContainer>
+        <Year>{year}</Year>
       </CardContainer>
     </>
   );
