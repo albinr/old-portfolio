@@ -19,7 +19,7 @@ const HeroSection = () => {
      imgHoverTxt="Visit Live Website"
      imageUrl={PortfolioImg}
      />
-     <Button Title="Press me"/>
+     <Button>hello</Button>
 
       {/* <HeroBg>
         <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
