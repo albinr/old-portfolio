@@ -1,13 +1,12 @@
 import styled from "styled-components";
 
 export const PortfolioContainer = styled.div`
-  color: #fff;
-  background: #16202d;
+  /* color: #fff; */
+  /* background: #16202d; */
   width: 100%;
   min-height: 100vh;
   padding: 0 20px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
 `;
@@ -16,14 +15,13 @@ export const PortfolioWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   margin: auto;
-  width: 100%;
+  max-width: 1000px;
   min-height: 100%;
 `;
 
 export const Title = styled.div`
-  width: 80vw;
   border-radius: 10px;
   h1 {
     font-size: calc(16px + 3vw);

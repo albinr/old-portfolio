@@ -26,6 +26,16 @@ const Navbar = () => {
     <>
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
+              <NavLinks
+                to="home"
+                smooth={true}
+                spy={true}
+                duration={500}
+                exact="true"
+                offset={-60}
+              >
+                AR
+              </NavLinks>
           <NavMenu>
             <NavItem>
               <NavLinks

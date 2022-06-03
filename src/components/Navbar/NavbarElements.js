@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
-  background: ${({ scrollNav }) => (scrollNav ? "#171a21" : "transparent")};
+  background: ${({ scrollNav }) => (scrollNav ? "rgba(0,0,0,0.2)" : "transparent")};
   height: 60px;
   margin-top: -60px;
   display: flex;
@@ -24,12 +24,17 @@ export const Nav = styled.nav`
 
 export const NavbarContainer = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   height: 60px;
   z-index: 1;
   width: 100%;
-  padding: 0 24px;
-  max-width: 1100px;
+  padding: 0 20px;
+  max-width: 1000px;
+`;
+
+export const Name = styled.h1`
+  font-size: 1.5rem;
 `;
 
 export const MobileIcon = styled.div`
@@ -77,11 +82,11 @@ export const NavLinks = styled(LinkS)`
     border-bottom: 2px solid #3498db;
     /* box-shadow: 0 12px 7px 6px #3498db; */
     /* box-shadow: 0 0 10px -20px #3498db inset, 0 0 10px -4px #3498db; */
-    color: #fff;
+    color: #000;
     transition: 0;
   }
   &:hover {
-    color: #fff;
+    color: #000;
   }
 `;
 export const NavBtn = styled.nav`

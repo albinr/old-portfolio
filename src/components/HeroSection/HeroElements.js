@@ -1,8 +1,9 @@
 import styled from "styled-components";
 import { Link as LinkS } from "react-scroll";
+import { useTheme } from "styled-components";
 
 export const HeroContainer = styled.div`
-  background: #0c0c0c;
+  /* background: #0c0c0c; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,7 +14,7 @@ export const HeroContainer = styled.div`
   padding: 0 20px;
   z-index: 1;
 
-  :before {
+  /* :before {
     content: "";
     position: absolute;
     top: 0;
@@ -27,7 +28,7 @@ export const HeroContainer = styled.div`
       ),
       linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, transparent 100%);
     z-index: 2;
-  }
+  } */
 `;
 export const HeroBg = styled.div`
   position: absolute;
