@@ -5,6 +5,7 @@ import {
   NavMenu,
   NavItem,
   NavLinks,
+  NavTitle,
 } from "./NavbarElements";
 
 const Navbar = () => {
@@ -26,6 +27,7 @@ const Navbar = () => {
     <>
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
+          <NavTitle>
               <NavLinks
                 to="home"
                 smooth={true}
@@ -36,6 +38,7 @@ const Navbar = () => {
               >
                 AR
               </NavLinks>
+          </NavTitle>
           <NavMenu>
             <NavItem>
               <NavLinks
@@ -49,7 +52,7 @@ const Navbar = () => {
                 Home
               </NavLinks>
             </NavItem>
-            <NavItem>
+            {/* <NavItem>
               <NavLinks
                 to="about"
                 smooth={true}
@@ -60,7 +63,7 @@ const Navbar = () => {
               >
                 About
               </NavLinks>
-            </NavItem>
+            </NavItem> */}
             <NavItem>
               <NavLinks
                 to="portfolio"

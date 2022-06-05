@@ -4,12 +4,12 @@ import { useTheme } from "styled-components";
 
 export const HeroContainer = styled.div`
   /* background: #0c0c0c; */
+
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
   width: 100%;
-  min-height: 100vh;
+  min-height: 80vh;
   position: relative;
   padding: 0 20px;
   z-index: 1;
@@ -30,70 +30,18 @@ export const HeroContainer = styled.div`
     z-index: 2;
   } */
 `;
-export const HeroBg = styled.div`
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-`;
 
-export const VideoBg = styled.video`
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-  background: #232a34;
-`;
-
-export const HeroContent = styled.div`
-  z-index: 3;
-  width: 100%;
+export const HeroWrapper = styled.div`
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-`;
-export const Header = styled.div`
-  display: flex;
-  justify-content: center;
+  max-width: 800px;
+  min-height: 100%;
   align-items: center;
-  color: #fff;
-  margin-bottom: 40px;
-  @media screen and (max-width: 768px) {
-    flex-wrap: wrap-reverse;
-  } ;
-`;
-export const Text = styled.div`
-  display: flex;
   flex-direction: column;
 `;
 
-export const Title = styled.div`
-  font-size: calc(20px + 2vw);
-  @media screen and (max-width: 768px) {
-  } ;
-`;
-export const Underline = styled.span`
-  border-bottom: 2px solid #3498db;
-`;
-
-export const Name = styled.div`
-  font-size: calc(10px + 1vw);
-  @media screen and (max-width: 768px) {
-  } ;
-`;
-export const Intro = styled.div`
-  font-size: calc(6px + 1vw);
-  @media screen and (max-width: 768px) {
-  } ;
-`;
 export const ImageContainer = styled.div`
-  width: 400px;
-  height: 400px;
-  border-radius: 50%;
+  width: 200px;
+  height: 200px;
   @media screen and (max-width: 768px) {
     width: 200px;
     height: 200px;
@@ -103,53 +51,33 @@ export const ImageContainer = styled.div`
 export const ImageAr = styled.img`
   width: 100%;
   height: 100%;
+  border-radius: 20px;
   -o-object-fit: cover;
   object-fit: cover;
-  border-radius: 50%;
-  filter: grayscale(100%);
-  transition: 0.5s;
-  :hover {
-    filter: grayscale(0%);
-  }
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 `;
 
-export const Buttons = styled.div`
+export const InfoBox = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: center;
-  @media screen and (max-width: 425px) {
-    flex-direction: column;
-  } ;
+  flex-direction: row;
 `;
 
-export const Btn = styled(LinkS)`
-  box-sizing: border-box;
-  appearance: none;
-  background-color: transparent;
-  width: 130px;
-  letter-spacing: 2px;
-  border: 1px solid #3498db;
-  color: #3498db;
-  cursor: pointer;
+export const BtnBox = styled.div`
   display: flex;
-  justify-content: center;
-  align-self: center;
-  font-size: 1rem;
-  font-weight: 600;
-  line-height: 1;
-  margin: 10px;
+  flex-direction: row;
+  width: 100%;
+`;
+
+export const HeroText = styled.div`
   padding: 10px;
-  text-decoration: none;
-  text-transform: uppercase;
-  border-color: #3498db;
-  color: #fff;
-  /* border-radius: 5px; */
-  box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
-  transition: all 150ms ease-in-out;
-  :hover,
-  :focus {
-    color: #fff;
-    outline: 0;
-    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+`;
+
+export const AboutText = styled.div`
+  margin: auto;
+  margin-bottom: 6%;
+  p {
+    /* font-size: calc(10px + 1vw); */
+    font-size: 1.2rem;
+    margin-top: 5px;
   }
 `;

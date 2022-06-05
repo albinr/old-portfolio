@@ -2,8 +2,9 @@ import styled from "styled-components";
 import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
-  background: ${({ scrollNav }) => (scrollNav ? "rgba(0,0,0,0.2)" : "transparent")};
-  height: 60px;
+  /* background: ${({ scrollNav }) => (scrollNav ? "rgba(0,0,0,0.2)" : "transparent")}; */
+  background: #fff;
+  height: 70px;
   margin-top: -60px;
   display: flex;
   justify-content: center;
@@ -13,6 +14,7 @@ export const Nav = styled.nav`
   top: 0;
   z-index: 10;
   transition: 0.5s all ease;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
@@ -63,7 +65,11 @@ export const NavMenu = styled.ul`
 `;
 
 export const NavItem = styled.li`
-  height: 60px;
+  height: 40px;
+`;
+
+export const NavTitle = styled.div`
+  height: 40px;
 `;
 
 export const NavLinks = styled(LinkS)`
@@ -71,28 +77,19 @@ export const NavLinks = styled(LinkS)`
   display: flex;
   align-items: center;
   text-decoration: none;
-  font-size: 20px;
-  letter-spacing: 2px;
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
-  transition: 0.2s;
 
   &.active {
-    border-bottom: 2px solid #3498db;
-    /* box-shadow: 0 12px 7px 6px #3498db; */
-    /* box-shadow: 0 0 10px -20px #3498db inset, 0 0 10px -4px #3498db; */
+    transition: 0.2s all ease-out;
+    border-radius: 6px;
     color: #000;
-    transition: 0;
+    /* box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
   &:hover {
     color: #000;
-  }
-`;
-export const NavBtn = styled.nav`
-  display: flex;
-  align-items: center;
-  @media screen and (max-width: 768px) {
-    display: none;
   }
 `;

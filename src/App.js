@@ -3,7 +3,7 @@ import "./App.css";
 import { BrowserRouter as Router } from "react-router-dom";
 import Home from "./pages";
 import { ThemeProvider } from "styled-components";
-import ThemeSwitch from "./ThemeSwitch";
+import ThemeSwitch from "./components/ThemeSwitch";
 
 
 const darkTheme = {

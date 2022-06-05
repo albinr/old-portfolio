@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const AboutContainer = styled.div`
   width: 100%;
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex;
   padding: 0 20px;
   flex-direction: column;
@@ -33,7 +33,6 @@ export const AboutText = styled.div`
   p {
     font-size: calc(10px + 1.2vw);
     margin-top: 5px;
-    line-height: 2;
-    letter-spacing: 2px;
+    line-height: 1.5;
   }
 `;

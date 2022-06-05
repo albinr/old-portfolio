@@ -4,7 +4,7 @@ export const PortfolioContainer = styled.div`
   /* color: #fff; */
   /* background: #16202d; */
   width: 100%;
-  min-height: 100vh;
+  min-height: 80vh;
   padding: 0 20px;
   display: flex;
   align-items: center;
