@@ -1,6 +1,7 @@
 // import Video from "../../videos/video.mp4";
 import Image from "../../images/albin.jpg";
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import CV from "../../files/cv.pdf";
+import { FaGithub, FaLinkedin, FaTwitter, FaFileDownload } from 'react-icons/fa';
 
 import {
   BtnBox,
@@ -15,7 +16,7 @@ import {
   IconBox,
   Line,
 } from "./HeroElements";
-import { Button } from "../ButtonElements";
+import { AButton } from "../AButtonElements";
 
 const HeroSection = () => {
   return (
@@ -28,19 +29,19 @@ const HeroSection = () => {
           <HeroContent>
             <Title>
                 <p>HELLO!</p>
-                <h1>I'm Albin Ryberg, a front end developer from Stockholm</h1>
+                <h1>I'm Albin Ryberg,</h1>
+                <h1>a front end developer</h1>
+                <h1>from Stockholm.</h1>
             </Title>
-             <Text>
-              <p>
-                I am currently studying front-end
-                development at KYH in Stockholm, Sweden.
-                When im not studying or developing I like spending time with
-                friends, working out and playing some video games.
-                I enjoy tinkering with things like keyboards and stuff too. 
-              </p>
-              </Text>
+            <Text>
+              <p>I am currently studying front-end
+                development at KYH in Stockholm, Sweden.</p>
+              <p>When im not studying or developing I like spending time with
+                friends, working out and playing some video games.</p>
+              <p>I enjoy tinkering with things like keyboards and stuff too.</p>
+            </Text>
               <BtnBox>
-                <Button>Download CV</Button>
+                <AButton href={CV} download>Download CV<FaFileDownload/></AButton>
               </BtnBox>
               <IconBox>
                 <a target="_blank" href="https://www.linkedin.com/in/albin-ryberg-bb22341a6/" rel="noreferrer">

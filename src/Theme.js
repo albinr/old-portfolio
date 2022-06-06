@@ -23,6 +23,18 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     transition: all 0.2s;
   }
+  &::-webkit-scrollbar {
+  width: 10px; /* Mostly for vertical scrollbars */
+  height: 10px; /* Mostly for horizontal scrollbars */
+  }
+  &::-webkit-scrollbar-thumb { /* Foreground */
+  /* background: ${(p) => p.theme.text}; */
+  background: #ccc;
+  border-radius: 6px;
+  }
+  &::-webkit-scrollbar-track { /* Background */
+  background: ${(p) => p.theme.background};
+  }
 `;
 
 const Theme = ({ children }) => {

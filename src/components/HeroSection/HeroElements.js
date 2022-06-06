@@ -31,7 +31,7 @@ export const HeroContainer = styled.div`
 
 export const HeroWrapper = styled.div`
   display: flex;
-  max-width:700px;
+  max-width: 800px;
   align-items: center;
   flex-direction: column;
 `;
@@ -39,10 +39,10 @@ export const HeroWrapper = styled.div`
 export const ImageContainer = styled.div`
   display: block;
   width: 300px;
-  height: 500px;
+  height: 600px;
   @media screen and (max-width: 768px) {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
   } ;
 `;
 
@@ -50,7 +50,7 @@ export const ImageAr = styled.img`
   display: flex;
   width: 100%;
   height: 100%;
-  border-radius: 6px;
+  border-radius: 10px;
   -o-object-fit: cover;
   object-fit: cover;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -60,27 +60,33 @@ export const HeroContent = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 400px;
-  max-height: 500px;
+  max-width: 500px;
+  max-height: 600px;
   padding-left: 20px;
+  letter-spacing: 1.5px;
   @media screen and (max-width: 768px) {
     padding-left: 0;
   }
-
 `;
 
 export const Title = styled.div`
+  font-size: 1.2rem;
+  @media screen and (max-width: 768px) {
+    font-size: 0.7rem;
+  }
 `;
 
 export const Text = styled.div`
  padding-top: 10px;
- font-size: 1.1rem;
+ font-size: 1.2rem;
+  @media screen and (max-width: 768px) {
+    font-size: 0.7rem;
+  }
 `;
 
 export const InfoBox = styled.div`
   display: flex;
   flex-direction: row;
-  margin-bottom: 10%;
   @media screen and (max-width: 768px) {
     flex-direction: column;
     align-items: center;
@@ -123,7 +129,7 @@ export const IconBox = styled.div`
     color: ${(p) => p.theme.text};
     :hover{
       color: #ccc;
-      transition: all 0.2s ease-in-out;
+      /* transition: all 0.1s ease-in-out; */
     }
   }
 `;

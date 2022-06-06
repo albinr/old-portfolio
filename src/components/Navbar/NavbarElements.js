@@ -15,7 +15,7 @@ export const Nav = styled.nav`
   top: 0;
   z-index: 10;
   transition: 0.5s all ease;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
@@ -32,8 +32,8 @@ export const NavbarContainer = styled.div`
   height: 60px;
   z-index: 1;
   width: 100%;
-  padding: 0 20px;
-  max-width: 820px;
+  padding: 0 10px;
+  max-width: 850px;
 `;
 
 export const Name = styled.h1`
@@ -77,21 +77,22 @@ export const NavTitle = styled.div`
 `;
 
 export const NavLinks = styled(LinkS)`
-  color: gray;
+  color:${({ theme }) => theme.text};
   display: flex;
   align-items: center;
   text-decoration: none;
+  border-radius: 6px;
   padding: 0 1rem;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   height: 100%;
   cursor: pointer;
+  border: 1px solid transparent;
 
   &.active {
     transition: 0.2s all ease-out;
-    border-radius: 6px;
-    color: #000;
-    background-color: #fff;
+    color: ${(p) => p.theme.text};
+    background: ${(p) => p.theme.background};
     /* box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
     /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -103,8 +104,9 @@ export const NavLinks = styled(LinkS)`
     /* color: #000; */
     transition: 0.2s all ease-out;
     border-radius: 6px;
-    color: #000;
-    background-color: #fff;
+    color: ${(p) => p.theme.text};
+    background: ${(p) => p.theme.background};
+    border: 1px solid #ccc;
     /* box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
     /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
