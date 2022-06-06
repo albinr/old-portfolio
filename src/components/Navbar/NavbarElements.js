@@ -32,7 +32,7 @@ export const NavbarContainer = styled.div`
   height: 60px;
   z-index: 1;
   width: 100%;
-  padding: 0 10px;
+  padding: 0 20px;
   max-width: 850px;
 `;
 
@@ -60,6 +60,9 @@ export const NavMenu = styled.ul`
   align-items: center;
   list-style: none;
   text-align: center;
+  /* width: 300px; */
+  border-radius: 10px;
+  background: ${(p) => p.theme.background};
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -74,6 +77,7 @@ export const NavTitle = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
 `;
 
 export const NavLinks = styled(LinkS)`
@@ -83,8 +87,8 @@ export const NavLinks = styled(LinkS)`
   text-decoration: none;
   border-radius: 6px;
   padding: 0 1rem;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
+  /* margin-left: 0.5rem;
+  margin-right: 0.5rem; */
   height: 100%;
   cursor: pointer;
   border: 1px solid transparent;

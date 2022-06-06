@@ -29,7 +29,7 @@ const GlobalStyle = createGlobalStyle`
   }
   &::-webkit-scrollbar-thumb { /* Foreground */
   /* background: ${(p) => p.theme.text}; */
-  background: #ccc;
+  background: gray;
   border-radius: 6px;
   }
   &::-webkit-scrollbar-track { /* Background */

@@ -4,9 +4,11 @@ import { FaRegSun, FaRegMoon } from 'react-icons/fa';
 import styled from "styled-components";
 
 const Moon = styled(FaRegMoon)`
+    margin: 10px;
     cursor: pointer;    
 `;
 const Sun = styled(FaRegSun)`
+    margin: 10px;
     cursor: pointer;    
 `;
 

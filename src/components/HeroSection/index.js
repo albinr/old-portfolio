@@ -1,7 +1,7 @@
 // import Video from "../../videos/video.mp4";
 import Image from "../../images/albin.jpg";
 import CV from "../../files/cv.pdf";
-import { FaGithub, FaLinkedin, FaTwitter, FaFileDownload } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 import {
   BtnBox,
@@ -17,6 +17,7 @@ import {
   Text,
   IconBox,
   Line,
+  DlIcon,
 } from "./HeroElements";
 import { AButton } from "../AButtonElements";
 
@@ -48,7 +49,7 @@ const HeroSection = () => {
               <p>I enjoy tinkering with things like keyboards and stuff too.</p>
             </Text>
               <BtnBox>
-                <AButton href={CV} download>Download CV<FaFileDownload/></AButton>
+                <AButton href={CV} download>Download CV<DlIcon/></AButton>
               </BtnBox>
               <IconBox>
                 <a target="_blank" href="https://www.linkedin.com/in/albin-ryberg-bb22341a6/" rel="noreferrer">

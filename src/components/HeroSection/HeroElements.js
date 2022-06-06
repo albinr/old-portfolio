@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {FaFileDownload } from 'react-icons/fa';
 
 export const HeroContainer = styled.div`
   /* background: #0c0c0c; */
@@ -48,8 +49,8 @@ export const ImageContainer = styled.div`
 
 export const SmallImg = styled.div`
   display: none;
-  width: 100px;
-  height: 90px;
+  width: 1/3;
+  height: 250px;
   @media screen and (max-width: 768px) {
     display: block;
   } ;
@@ -59,7 +60,10 @@ export const Header = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  
+  @media screen and (max-width: 768px) {
+    justify-content: center;
+  }
 `;
 
 export const ImageAr = styled.img`
@@ -82,13 +86,20 @@ export const HeroContent = styled.div`
   letter-spacing: 1.5px;
   @media screen and (max-width: 768px) {
     padding-left: 0;
+    align-items: center;
+    /* max-width: 360px; */
+    width: 1/3;
   }
 `;
 
 export const Title = styled.div`
-  font-size: 1.2rem;
+  font-size: 1rem;
+  p{
+    color: gray;
+  }
   @media screen and (max-width: 768px) {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
+    padding-left: 10px;
   }
 `;
 
@@ -150,8 +161,12 @@ export const IconBox = styled.div`
   }
 `;
 
+export const DlIcon = styled(FaFileDownload)`
+  margin-left: 6px;
+`;
+
 export const Line = styled.div`
   width: 20px;
-  border-bottom: 2px solid #ccc;
+  border-bottom: 2px solid gray;
   margin: 0 10px;
 `;
