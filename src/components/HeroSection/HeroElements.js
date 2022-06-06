@@ -37,13 +37,29 @@ export const HeroWrapper = styled.div`
 `;
 
 export const ImageContainer = styled.div`
-  display: block;
   width: 300px;
   height: 600px;
   @media screen and (max-width: 768px) {
     width: 150px;
     height: 150px;
+    display: none;
   } ;
+`;
+
+export const SmallImg = styled.div`
+  display: none;
+  width: 100px;
+  height: 90px;
+  @media screen and (max-width: 768px) {
+    display: block;
+  } ;
+`;
+
+export const Header = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const ImageAr = styled.img`

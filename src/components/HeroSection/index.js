@@ -9,8 +9,10 @@ import {
   HeroWrapper,
   ImageAr,
   ImageContainer,
+  SmallImg,
   InfoBox,
   HeroContent,
+  Header,
   Title,
   Text,
   IconBox,
@@ -27,12 +29,17 @@ const HeroSection = () => {
             <ImageAr src={Image} alt="Albin Ryberg"/>
           </ImageContainer>
           <HeroContent>
-            <Title>
-                <p>HELLO!</p>
-                <h1>I'm Albin Ryberg,</h1>
-                <h1>a front end developer</h1>
-                <h1>from Stockholm.</h1>
-            </Title>
+            <Header>
+              <SmallImg>
+                <ImageAr src={Image} alt="Albin Ryberg"/>
+              </SmallImg>
+              <Title>
+                  <p>HELLO!</p>
+                  <h1>I'm Albin Ryberg,</h1>
+                  <h1>a front end developer</h1>
+                  <h1>from Stockholm.</h1>
+              </Title>
+            </Header>
             <Text>
               <p>I am currently studying front-end
                 development at KYH in Stockholm, Sweden.</p>
