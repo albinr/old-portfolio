@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import {
   Nav,
   NavbarContainer,
@@ -7,9 +7,13 @@ import {
   NavLinks,
   NavTitle,
 } from "./NavbarElements";
+import { ThemeContext } from "../../contexts/ThemeStore";
+import { FaRegSun, FaRegMoon } from 'react-icons/fa';
+
 
 const Navbar = () => {
   const [scrollNav, setScrollNav] = useState(false);
+  const { theme, switchTheme } = useContext(ThemeContext);
 
   const changeNav = () => {
     if (window.scrollY >= 60) {
@@ -38,7 +42,13 @@ const Navbar = () => {
               >
                 AR
               </NavLinks>
+          {theme === "dark" ? (
+            <FaRegMoon size={32} color="#fff" onClick={() => switchTheme("light")} />
+              ) : (
+            <FaRegSun size={32} onClick={() => switchTheme("dark")} />
+          )}
           </NavTitle>
+          
           <NavMenu>
             <NavItem>
               <NavLinks

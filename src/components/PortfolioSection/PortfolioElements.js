@@ -3,6 +3,8 @@ import styled from "styled-components";
 export const PortfolioContainer = styled.div`
   /* color: #fff; */
   /* background: #16202d; */
+  background: ${(p) => p.theme.background};
+  color: ${(p) => p.theme.text};
   width: 100%;
   min-height: 80vh;
   padding: 0 20px;

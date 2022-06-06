@@ -1,6 +1,6 @@
 // import Video from "../../videos/video.mp4";
 import Image from "../../images/albin.jpg";
-import { useTheme } from "styled-components";
+import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 import {
   BtnBox,
@@ -9,10 +9,12 @@ import {
   ImageAr,
   ImageContainer,
   InfoBox,
-  HeroText,
-  AboutText,
+  HeroContent,
+  Title,
+  Text,
+  IconBox,
+  Line,
 } from "./HeroElements";
-import { ScrollButton } from "../ScrollButtonElements";
 import { Button } from "../ButtonElements";
 
 const HeroSection = () => {
@@ -23,29 +25,38 @@ const HeroSection = () => {
           <ImageContainer>
             <ImageAr src={Image} alt="Albin Ryberg"/>
           </ImageContainer>
-          <div>
-            <HeroText>
-            <h1>Hi! My name is Albin Ryberg.</h1>
-            <h2>I'm a junior front end developer.</h2>
-            <p>With a passion for creating beautiful, responsive websites.</p>
-            </HeroText>
-            <BtnBox>
-              <Button>Download CV</Button>
-              <ScrollButton>Portfolio</ScrollButton>
-            </BtnBox>
-          </div>
+          <HeroContent>
+            <Title>
+                <p>HELLO!</p>
+                <h1>I'm Albin Ryberg, a front end developer from Stockholm</h1>
+            </Title>
+             <Text>
+              <p>
+                I am currently studying front-end
+                development at KYH in Stockholm, Sweden.
+                When im not studying or developing I like spending time with
+                friends, working out and playing some video games.
+                I enjoy tinkering with things like keyboards and stuff too. 
+              </p>
+              </Text>
+              <BtnBox>
+                <Button>Download CV</Button>
+              </BtnBox>
+              <IconBox>
+                <a target="_blank" href="https://www.linkedin.com/in/albin-ryberg-bb22341a6/" rel="noreferrer">
+                  <FaLinkedin size={30}/>
+                </a>
+                <Line/>
+                <a target="_blank" href="https://github.com/AlbinR" rel="noreferrer">
+                  <FaGithub size={30}/>
+                </a>
+                <Line/>
+                <a target="_blank" href="https://twitter.com/AlbinRyberg" rel="noreferrer">
+                  <FaTwitter size={30}/>
+                </a>
+              </IconBox>
+          </HeroContent>
         </InfoBox>
-        <AboutText>
-          <p>
-            Hi, my name is Albin Ryberg. I am currently studying front-end
-            development at KYH in Stockholm, Sweden.
-          </p>
-          <p>
-            When im not studying or developing i enjoy spending time with
-            friends, working out and playing some video games.
-          </p>
-          <p>I enjoy tinkering with things like keyboards and stuff too. </p>
-        </AboutText>
       </HeroWrapper>
     </HeroContainer>
   );
