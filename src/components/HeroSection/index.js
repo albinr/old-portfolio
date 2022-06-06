@@ -1,71 +1,64 @@
-import Video from "../../videos/video.mp4";
+// import Video from "../../videos/video.mp4";
 import Image from "../../images/albin.jpg";
+import CV from "../../files/cv.pdf";
+import { FaGithub, FaLinkedin, FaTwitter, FaFileDownload } from 'react-icons/fa';
 
 import {
+  BtnBox,
   HeroContainer,
-  HeroBg,
-  VideoBg,
-  HeroContent,
-  Header,
-  Text,
-  Title,
-  Name,
-  Intro,
-  ImageContainer,
+  HeroWrapper,
   ImageAr,
-  Buttons,
-  Underline,
+  ImageContainer,
+  InfoBox,
+  HeroContent,
+  Title,
+  Text,
+  IconBox,
+  Line,
 } from "./HeroElements";
-import { ScrollButton } from "../ScrollButtonElements";
-import { Button } from "../ButtonElements";
+import { AButton } from "../AButtonElements";
 
 const HeroSection = () => {
   return (
     <HeroContainer id="home">
-      <HeroBg>
-        <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
-      </HeroBg>
-      <HeroContent>
-        <Header>
-          <Text>
-            <Title>
-              <h1>Hello,</h1>
-            </Title>
-            <Name>
-              <h2>
-                my name is <Underline>Albin Ryberg</Underline>.
-              </h2>
-            </Name>
-            <Intro>
-              <h2>
-                Front-end developer studying at&nbsp;
-                <Underline>KYH</Underline>.
-              </h2>
-            </Intro>
-          </Text>
+      <HeroWrapper>
+        <InfoBox>
           <ImageContainer>
-            <ImageAr src={Image} alt="Albin" type="image/jpg" />
+            <ImageAr src={Image} alt="Albin Ryberg"/>
           </ImageContainer>
-        </Header>
-        <Buttons>
-          <ScrollButton
-            to="about"
-            smooth={true}
-            spy={true}
-            duration={500}
-            exact="true"
-            offset={-80}
-            primary
-            dark
-          >
-            More
-          </ScrollButton>
-          <Button>
-            Download CV
-          </Button>
-        </Buttons>
-      </HeroContent>
-      
+          <HeroContent>
+            <Title>
+                <p>HELLO!</p>
+                <h1>I'm Albin Ryberg,</h1>
+                <h1>a front end developer</h1>
+                <h1>from Stockholm.</h1>
+            </Title>
+            <Text>
+              <p>I am currently studying front-end
+                development at KYH in Stockholm, Sweden.</p>
+              <p>When im not studying or developing I like spending time with
+                friends, working out and playing some video games.</p>
+              <p>I enjoy tinkering with things like keyboards and stuff too.</p>
+            </Text>
+              <BtnBox>
+                <AButton href={CV} download>Download CV<FaFileDownload/></AButton>
+              </BtnBox>
+              <IconBox>
+                <a target="_blank" href="https://www.linkedin.com/in/albin-ryberg-bb22341a6/" rel="noreferrer">
+                  <FaLinkedin size={30}/>
+                </a>
+                <Line/>
+                <a target="_blank" href="https://github.com/AlbinR" rel="noreferrer">
+                  <FaGithub size={30}/>
+                </a>
+                <Line/>
+                <a target="_blank" href="https://twitter.com/AlbinRyberg" rel="noreferrer">
+                  <FaTwitter size={30}/>
+                </a>
+              </IconBox>
+          </HeroContent>
+        </InfoBox>
+      </HeroWrapper>
     </HeroContainer>
   );
 };

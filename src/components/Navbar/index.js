@@ -5,7 +5,10 @@ import {
   NavMenu,
   NavItem,
   NavLinks,
+  NavTitle,
 } from "./NavbarElements";
+import {ThemeToggler} from "../ThemeToggle";
+
 
 const Navbar = () => {
   const [scrollNav, setScrollNav] = useState(false);
@@ -26,6 +29,19 @@ const Navbar = () => {
     <>
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
+          <NavTitle>
+              <NavLinks
+                to="home"
+                smooth={true}
+                spy={true}
+                duration={500}
+                exact="true"
+                offset={-60}
+              >
+                AR
+              </NavLinks>
+              <ThemeToggler/>
+          </NavTitle>
           <NavMenu>
             <NavItem>
               <NavLinks
@@ -39,7 +55,7 @@ const Navbar = () => {
                 Home
               </NavLinks>
             </NavItem>
-            <NavItem>
+            {/* <NavItem>
               <NavLinks
                 to="about"
                 smooth={true}
@@ -50,7 +66,7 @@ const Navbar = () => {
               >
                 About
               </NavLinks>
-            </NavItem>
+            </NavItem> */}
             <NavItem>
               <NavLinks
                 to="portfolio"

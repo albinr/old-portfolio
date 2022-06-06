@@ -3,17 +3,16 @@ import { FaGithub } from "react-icons/fa";
 
 export const CardContainer = styled.a`
   display: flex;
-  justify-content: space-between;
-  background-color: #171a21;
-  color: #fff;
-  border-radius: 10px;
+  flex-direction: column;
+  /* background-color: #171a21; */
+  /* color: #fff; */
+  border-radius: 4px;
   overflow: hidden;
-  width: 440px;
-  height: 220px;
-  margin: 5px;
+  /* border: 1px solid #ccc; */
+  margin: 10px;
   transition: top 0.2s ease-in-out;
   position: relative;
-  top: 0;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   @media screen and (max-width: 768px) {
     zoom: 0.65;
     -moz-transform: scale(0.72);
@@ -24,19 +23,20 @@ export const CardContainer = styled.a`
 export const CardInfoBox = styled.div`
   display: flex;
   flex-direction: column;
-  width: 220px;
+  justify-content: space-between;
+  width: 300px;
 `;
 export const CardContent = styled.div`
   flex: 1 0 auto;
 `;
 
 export const CardTitle = styled.div`
-  padding: 10px 0px 0px 12px;
+  padding: 6px;
   font-size: 35px;
 `;
 
 export const CardText = styled.div`
-  padding: 0 10px 0 20px;
+  padding: 6px;
   letter-spacing: 1px;
 `;
 
@@ -51,14 +51,11 @@ export const GitIcon = styled(FaGithub)`
 `;
 
 export const ImageContainer = styled.div`
-  max-width: 220px;
-  float: right;
+  width: 300px;
+  height: 200px;
   background-color: #fff;
-  border-top-left-radius: 50%;
-  border-bottom-left-radius: 50%;
-  overflow: hidden;
   img {
-    width: 220px;
+    width: 100%;
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;

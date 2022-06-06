@@ -1,10 +1,8 @@
 import styled from "styled-components";
 
 export const AboutContainer = styled.div`
-  color: #fff;
-  background: #16202d;
   width: 100%;
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex;
   padding: 0 20px;
   flex-direction: column;
@@ -18,12 +16,11 @@ export const AboutWrapper = styled.div`
   align-items: center;
   justify-content: center;
   margin: auto;
-  width: 100%;
+  max-width: 1000px;
   min-height: 100%;
 `;
 
 export const AboutText = styled.div`
-  width: 80vw;
   margin: auto;
   border-radius: 10px;
   margin-bottom: 6%;
@@ -36,7 +33,6 @@ export const AboutText = styled.div`
   p {
     font-size: calc(10px + 1.2vw);
     margin-top: 5px;
-    line-height: 2;
-    letter-spacing: 2px;
+    line-height: 1.5;
   }
 `;

@@ -2,9 +2,11 @@ import styled from "styled-components";
 import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
-  background: ${({ scrollNav }) => (scrollNav ? "#171a21" : "transparent")};
-  height: 60px;
-  margin-top: -60px;
+  /* background: ${({ scrollNav }) => (scrollNav ? "rgba(0,0,0,0.2)" : "transparent")}; */
+  /* background: #fff; */
+  backdrop-filter: blur(10px);
+  height: 70px;
+  margin-top: -70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,6 +15,7 @@ export const Nav = styled.nav`
   top: 0;
   z-index: 10;
   transition: 0.5s all ease;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
@@ -24,12 +27,17 @@ export const Nav = styled.nav`
 
 export const NavbarContainer = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   height: 60px;
   z-index: 1;
   width: 100%;
-  padding: 0 24px;
-  max-width: 1100px;
+  padding: 0 10px;
+  max-width: 850px;
+`;
+
+export const Name = styled.h1`
+  font-size: 1.5rem;
 `;
 
 export const MobileIcon = styled.div`
@@ -58,36 +66,49 @@ export const NavMenu = styled.ul`
 `;
 
 export const NavItem = styled.li`
-  height: 60px;
+  height: 40px;
+`;
+
+export const NavTitle = styled.div`
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 `;
 
 export const NavLinks = styled(LinkS)`
-  color: gray;
+  color:${({ theme }) => theme.text};
   display: flex;
   align-items: center;
   text-decoration: none;
-  font-size: 20px;
-  letter-spacing: 2px;
+  border-radius: 6px;
   padding: 0 1rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
   height: 100%;
   cursor: pointer;
-  transition: 0.2s;
+  border: 1px solid transparent;
 
   &.active {
-    border-bottom: 2px solid #3498db;
-    /* box-shadow: 0 12px 7px 6px #3498db; */
-    /* box-shadow: 0 0 10px -20px #3498db inset, 0 0 10px -4px #3498db; */
-    color: #fff;
-    transition: 0;
+    transition: 0.2s all ease-out;
+    color: ${(p) => p.theme.text};
+    background: ${(p) => p.theme.background};
+    /* box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  &::after{
+    /* transition: 0.2s all ease-out; */
   }
   &:hover {
-    color: #fff;
-  }
-`;
-export const NavBtn = styled.nav`
-  display: flex;
-  align-items: center;
-  @media screen and (max-width: 768px) {
-    display: none;
+    /* color: #000; */
+    transition: 0.2s all ease-out;
+    border-radius: 6px;
+    color: ${(p) => p.theme.text};
+    background: ${(p) => p.theme.background};
+    border: 1px solid #ccc;
+    /* box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
 `;

@@ -3,8 +3,10 @@ import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 export const ContactContainer = styled.div`
-  color: #fff;
-  background: #16202d;
+  /* color: #fff;
+  background: #16202d; */
+  background: ${(p) => p.theme.background};
+  color: ${(p) => p.theme.text};
   width: 100%;
   min-height: 100vh;
   display: flex;

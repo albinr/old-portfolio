@@ -1,5 +1,5 @@
 import React from "react";
-import AboutSection from "../components/AboutSection";
+// import AboutSection from "../components/AboutSection";
 import HeroSection from "../components/HeroSection";
 import Navbar from "../components/Navbar";
 import PortfolioSection from "../components/PortfolioSection";
@@ -13,7 +13,7 @@ const Home = () => {
       <Navbar />
       <MobileNavbar />
       <HeroSection />
-      <AboutSection />
+      {/* <AboutSection /> */}
       <PortfolioSection />
       <ContactSection />
       {/* <Footer /> */}

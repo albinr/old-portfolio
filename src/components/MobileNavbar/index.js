@@ -1,34 +1,39 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import {
   Nav,
   NavbarContainer,
   NavMenu,
   NavItem,
   NavLinks,
+  ToggleDiv,
 } from "./MobileNavbarElements";
-import { MdHome, MdAccountCircle, MdChat, MdBook } from "react-icons/md";
+import { MdHome, MdChat, MdBook } from "react-icons/md";
+import { ThemeToggler } from "../ThemeToggle";
 
 const ICON_SIZE = 30;
 
 const MobileNavbar = () => {
-//   const [scrollNav, setScrollNav] = useState(false);
 
-//   const changeNav = () => {
-//     if (window.scrollY >= -80) {
-//       setScrollNav(true);
-//     } else {
-//       setScrollNav(false);
-//     }
-//   };
+  const [scrollNav, setScrollNav] = useState(false);
 
-//   useEffect(() => {
-//     window.addEventListener("scroll", changeNav);
-//   }, []);
+  const changeNav = () => {
+    if (window.scrollY >= 60) {
+      setScrollNav(true);
+    } else {
+      setScrollNav(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", changeNav);
+  }, []);
 
   return (
     <>
-      {/* <Nav scrollNav={scrollNav}> */}
-      <Nav>
+      <Nav scrollNav={scrollNav}>
+        <ToggleDiv>
+          <ThemeToggler/>
+        </ToggleDiv>
         <NavbarContainer>
           <NavMenu>
             <NavItem>
@@ -41,18 +46,6 @@ const MobileNavbar = () => {
               >
                 <MdHome size={ICON_SIZE} />
                 <p>Home</p>
-              </NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks
-                to="about"
-                smooth={true}
-                spy={true}
-                duration={500}
-                exact="true"
-              >
-                <MdAccountCircle size={ICON_SIZE}/>
-                <p>About</p>
               </NavLinks>
             </NavItem>
             <NavItem>
@@ -81,6 +74,7 @@ const MobileNavbar = () => {
             </NavItem>
           </NavMenu>
         </NavbarContainer>
+        
       </Nav>
     </>
   );

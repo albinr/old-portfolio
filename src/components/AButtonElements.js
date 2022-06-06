@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 
-export const Button = styled.button`
+export const AButton = styled.a`
     border-radius: 10px;
     white-space: nowrap;
+    text-decoration: none;
     outline: none;
     cursor: pointer;
     display: flex;
