@@ -153,9 +153,11 @@ export const IconBox = styled.div`
     justify-content: center;
   }
   a {
+    align-items: center;
+    justify-content: center;
     color: ${(p) => p.theme.text};
     :hover{
-      color: #ccc;
+      color: gray;
       /* transition: all 0.1s ease-in-out; */
     }
   }
