@@ -5,8 +5,14 @@ import {
   Title,
   Input,
   Textarea,
+  ContactForm,
+  Socials,
+  ContactContent,
 } from "./ContactElements";
 import { Button } from "../ButtonElements";
+
+import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { HiMail } from 'react-icons/hi';
 
 const ContactSection = () => {
 
@@ -40,50 +46,52 @@ const ContactSection = () => {
           <Title>
             <h1>Contact me</h1>
           </Title>
-          <form
-          netlify
-          name="contact"
-          onSubmit={handleSubmit}>
-          <h3>
-            Send me a message and I'll get back to you as soon as possible.
-          </h3>
-          <div>
-            <label htmlFor="name">
-              Name
-            </label>
-            <Input
-              type="text"
-              id="name"
-              name="name"
-              onChange={(e) => setName(e.target.value)}
-            />
-          </div>
-          <div>
-            <label htmlFor="email">
-              Email
-            </label>
-            <Input
-              type="email"
-              id="email"
-              name="email"
-              onChange={(e) => setEmail(e.target.value)}
-            />
-          </div>
-          <div>
-            <label htmlFor="message">
-              Message
-            </label>
-            <Textarea
-              id="message"
-              name="message"
-              onChange={(e) => setMessage(e.target.value)}
-            />
-          </div>
-          <Button
-            type="submit">
-            Submit
-          </Button>
-        </form>
+          <ContactContent>
+            <Socials>
+              <a href="https://github.com/AlbinR" target="_blank" rel="noreferrer"><HiMail size={40}/> <p>Email</p><p>albin@rybergs.net</p></a>
+              <a href="https://github.com/AlbinR" target="_blank" rel="noreferrer"><FaGithub size={40}/> <p>Github</p><p>AlbinR</p></a>
+              <a href="https://github.com/AlbinR" target="_blank" rel="noreferrer"><FaLinkedin size={40}/> <p>LinkedIn</p><p>AlbinR</p></a>
+              <a href="https://github.com/AlbinR" target="_blank" rel="noreferrer"><FaTwitter size={40}/> <p>Twitter</p><p>AlbinR</p></a>
+            </Socials>
+            <ContactForm
+              netlify
+              name="contact"
+              onSubmit={handleSubmit}>
+              <div>
+                <label htmlFor="name"/>
+                <Input
+                  placeholder="Your full name"
+                  type="text"
+                  id="name"
+                  name="name"
+                  onChange={(e) => setName(e.target.value)}
+                />
+              </div>
+              <div>
+                <label htmlFor="email"/>
+                <Input
+                  placeholder="Your email address"
+                  type="email"
+                  id="email"
+                  name="email"
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+              </div>
+              <div>
+                <label htmlFor="message"/>
+                <Textarea
+                  placeholder="Your message"
+                  id="message"
+                  name="message"
+                  onChange={(e) => setMessage(e.target.value)}
+                />
+              </div>
+              <Button
+                type="submit">
+                Send Message
+              </Button>
+            </ContactForm>
+          </ContactContent>
         </ContactWrapper>
       </ContactContainer>
     </>
