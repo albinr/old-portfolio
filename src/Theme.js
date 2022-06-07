@@ -7,13 +7,13 @@ const themes = {
     accent: "#3498DB",
     background: "#1c1c1c",
     text: "#fff",
-    onSurface: "#fff",
+    onSurface: "#3b3b3b",
   },
   light: {
     accent: "#3498DB",
     background: "#fff",
     text: "#1c1c1c",
-    onSurface: "#333",
+    onSurface: "#cccccc",
   },
 };
 

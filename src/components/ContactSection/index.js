@@ -6,6 +6,7 @@ import {
   Input,
   Textarea,
 } from "./ContactElements";
+import { Button } from "../ButtonElements";
 
 const ContactSection = () => {
 
@@ -43,10 +44,9 @@ const ContactSection = () => {
           netlify
           name="contact"
           onSubmit={handleSubmit}>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum
-            suscipit officia aspernatur veritatis. Asperiores, aliquid?
-          </p>
+          <h3>
+            Send me a message and I'll get back to you as soon as possible.
+          </h3>
           <div>
             <label htmlFor="name">
               Name
@@ -79,10 +79,10 @@ const ContactSection = () => {
               onChange={(e) => setMessage(e.target.value)}
             />
           </div>
-          <button
+          <Button
             type="submit">
             Submit
-          </button>
+          </Button>
         </form>
         </ContactWrapper>
       </ContactContainer>
