@@ -1,13 +1,13 @@
 import { useContext } from "react";
 import { ThemeContext } from "../contexts/ThemeStore";
-import { FaRegSun, FaRegMoon } from 'react-icons/fa';
+import { HiOutlineSun , HiOutlineMoon } from 'react-icons/hi';
 import styled from "styled-components";
 
-const Moon = styled(FaRegMoon)`
+const Moon = styled(HiOutlineMoon)`
     margin: 10px;
     cursor: pointer;    
 `;
-const Sun = styled(FaRegSun)`
+const Sun = styled(HiOutlineSun)`
     margin: 10px;
     cursor: pointer;    
 `;
@@ -17,9 +17,9 @@ export const ThemeToggler = () => {
     return (
     <>
         {theme === "dark" ? (
-        <Moon size={20} color="#fff" onClick={() => switchTheme("light")} />
+        <Moon size={26} color="#fff" onClick={() => switchTheme("light")} />
         ) : (
-        <Sun size={20} color="#000" onClick={() => switchTheme("dark")} />
+        <Sun size={26} color="#000" onClick={() => switchTheme("dark")} />
         )}
     </>
     );

@@ -3,6 +3,8 @@ import {
   ContactContainer,
   ContactWrapper,
   Title,
+  Input,
+  Textarea,
 } from "./ContactElements";
 
 const ContactSection = () => {
@@ -49,7 +51,7 @@ const ContactSection = () => {
             <label htmlFor="name">
               Name
             </label>
-            <input
+            <Input
               type="text"
               id="name"
               name="name"
@@ -60,7 +62,7 @@ const ContactSection = () => {
             <label htmlFor="email">
               Email
             </label>
-            <input
+            <Input
               type="email"
               id="email"
               name="email"
@@ -71,7 +73,7 @@ const ContactSection = () => {
             <label htmlFor="message">
               Message
             </label>
-            <textarea
+            <Textarea
               id="message"
               name="message"
               onChange={(e) => setMessage(e.target.value)}

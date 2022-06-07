@@ -24,3 +24,29 @@ export const Title = styled.div`
   font-size: 2rem;
   padding: 20px;
 `;
+export const Input = styled.input`
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid ${(p) => p.theme.text};
+  border-radius: 5px;
+  font-size: 1.2rem;
+  outline: none;
+  @media screen and (max-width: 800px) {
+    margin: 10px 0;
+  }
+`;
+
+export const Textarea = styled.textarea`
+  width: 100%;
+  min-height: 200px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid ${(p) => p.theme.text};
+  border-radius: 5px;
+  font-size: 1.2rem;
+  @media screen and (max-width: 800px) {
+    margin: 10px 0;
+  }
+
+`;
