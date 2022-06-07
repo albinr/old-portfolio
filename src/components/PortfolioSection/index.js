@@ -1,18 +1,18 @@
 import React from "react";
 
-import albin from "../../images/albin.jpg";
+// import albin from "../../images/albin.jpg";
 
-import { projects } from "../../data";
+// import { projects } from "../../data";
 
 import {
   PortfolioContainer,
   PortfolioWrapper,
   Title,
-  ProjectAlink,
-  ProjectImg,
-  ProjectsContainer,
-  ProjectDiv,
-  ProjectText,
+  // ProjectAlink,
+  // ProjectImg,
+  // ProjectsContainer,
+  // ProjectDiv,
+  // ProjectText,
 } from "./PortfolioElements";
 
 const PortfolioSection = () => {
