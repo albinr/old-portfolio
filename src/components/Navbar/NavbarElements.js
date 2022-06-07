@@ -60,8 +60,9 @@ export const NavMenu = styled.ul`
   align-items: center;
   list-style: none;
   text-align: center;
-  /* width: 300px; */
-  border-radius: 10px;
+  justify-content: space-between;
+  width: 300px;
+  border-radius: 6px;
   background: ${(p) => p.theme.background};
   @media screen and (max-width: 768px) {
     display: none;
@@ -87,8 +88,6 @@ export const NavLinks = styled(LinkS)`
   text-decoration: none;
   border-radius: 6px;
   padding: 0 1rem;
-  /* margin-left: 0.5rem;
-  margin-right: 0.5rem; */
   height: 100%;
   cursor: pointer;
   border: 1px solid transparent;
@@ -100,6 +99,7 @@ export const NavLinks = styled(LinkS)`
     /* box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
     /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: 1px solid #ccc;
   }
   &::after{
     /* transition: 0.2s all ease-out; */

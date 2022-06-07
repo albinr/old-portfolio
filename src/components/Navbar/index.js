@@ -36,9 +36,9 @@ const Navbar = () => {
                 spy={true}
                 duration={500}
                 exact="true"
-                offset={-60}
+                offset={-70}
               >
-                AR
+                Albin Ryberg
               </NavLinks>
               <ThemeToggler/>
           </NavTitle>
@@ -50,7 +50,7 @@ const Navbar = () => {
                 spy={true}
                 duration={500}
                 exact="true"
-                offset={-60}
+                offset={-70}
               >
                 Home
               </NavLinks>
@@ -74,7 +74,7 @@ const Navbar = () => {
                 spy={true}
                 duration={500}
                 exact="true"
-                offset={-60}
+                offset={-70}
               >
                 Portfolio
               </NavLinks>

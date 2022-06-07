@@ -1,52 +1,74 @@
 import styled from "styled-components";
 
 export const PortfolioContainer = styled.div`
-  /* color: #fff; */
-  /* background: #16202d; */
   background: ${(p) => p.theme.background};
   color: ${(p) => p.theme.text};
   width: 100%;
-  min-height: 80vh;
+  min-height: 100vh;
   padding: 0 20px;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
 `;
 
 export const PortfolioWrapper = styled.div`
   display: flex;
-  flex-direction: column;
+  max-width: 800px;
   align-items: center;
-  /* justify-content: center; */
-  margin: auto;
-  max-width: 1000px;
-  min-height: 100%;
+  flex-direction: column;
 `;
 
 export const Title = styled.div`
-  border-radius: 10px;
-  h1 {
-    font-size: calc(16px + 3vw);
-    font-weight: bold;
-    padding: 20px;
+  width: 100%;
+  font-size: 2rem;
+  padding: 20px;
+`;
+
+
+export const ProjectsContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+`;
+
+export const ProjectAlink = styled.a`
+  text-decoration: none;
+  /* height: 200px;
+  width: 100%; */
+  /* margin: 4px; */
+  padding: 4px;
+
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+  @media (min-width: 768px) {
+    width: 50%;
   }
 `;
 
-export const Cards = styled.div`
+export const ProjectDiv = styled.div`
   display: flex;
-  justify-content: start;
-  flex-direction: column;
-  flex-wrap: wrap;
-`;
-
-export const CardDiv = styled.div`
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: row;
+  position: relative;
+  height: 100%;
   width: 100%;
-  flex-wrap: wrap;
 `;
 
-export const ALink = styled.a`
-  text-decoration: none;
+export const ProjectImg = styled.img`
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: flex;
+  -o-object-fit: cover;
+`;
+
+export const ProjectText = styled.div`
+  opacity: 0;
+  padding: 10px;
+  z-index: 6;
+  width: 100%;
+  height: 100%;
+  color: ${(p) => p.theme.text};
+  &:hover {
+    opacity: 1;
+  }
 `;
