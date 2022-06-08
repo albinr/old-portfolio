@@ -56,7 +56,7 @@ export const MobileIcon = styled.div`
     color: ${(p) => p.theme.text};
     transition: 0.2s all ease-out;
     background: ${(p) => p.theme.background};
-    border: 1px solid gray;
+    border: 1px solid #ccc;
   } ;
 `;
 
