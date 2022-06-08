@@ -48,10 +48,15 @@ export const MobileIcon = styled.div`
     align-items: center;
     justify-content: center;
     align-items: center;
+    border-radius: 6px;
     /* transform: translate(-100%, 60%); */
     font-size: 2rem;
+    padding: 4px;
     cursor: pointer;
     color: ${(p) => p.theme.text};
+    transition: 0.2s all ease-out;
+    background: ${(p) => p.theme.background};
+    border: 1px solid gray;
   } ;
 `;
 

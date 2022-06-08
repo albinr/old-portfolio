@@ -4,8 +4,8 @@ import { Link as LinkS } from "react-scroll";
 export const SidebarContainer = styled.aside`
   position: fixed;
   z-index: 9;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background: ${(p) => p.theme.onBackground};
   backdrop-filter: blur(10px);
   display: grid;
