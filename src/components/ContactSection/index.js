@@ -12,7 +12,8 @@ import {
 import { Button } from "../ButtonElements";
 
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
-import { HiMail, HiChat,  } from 'react-icons/hi';
+import { HiMail } from 'react-icons/hi';
+import { MdChat } from "react-icons/md";
 
 const ContactSection = () => {
 
@@ -44,14 +45,14 @@ const ContactSection = () => {
       <ContactContainer id="contact">
         <ContactWrapper>
           <Title>
-            <h1>Contact me</h1> <HiChat size={40}/>
+            <h1>Contact me</h1> <MdChat size={40}/>
           </Title>
           <ContactContent>
             <Socials>
-              <a href="https://github.com/AlbinR" target="_blank" rel="noreferrer"><HiMail size={40}/> <p>Email</p><p>albin@rybergs.net</p></a>
-              <a href="https://github.com/AlbinR" target="_blank" rel="noreferrer"><FaGithub size={40}/> <p>Github</p><p>AlbinR</p></a>
-              <a href="https://github.com/AlbinR" target="_blank" rel="noreferrer"><FaLinkedin size={40}/> <p>LinkedIn</p><p>AlbinR</p></a>
-              <a href="https://github.com/AlbinR" target="_blank" rel="noreferrer"><FaTwitter size={40}/> <p>Twitter</p><p>AlbinR</p></a>
+              <a href="https://github.com/AlbinR" target="_blank" rel="noreferrer"><div><HiMail size={40}/><p>Email</p></div><p>albin@rybergs.net</p></a>
+              <a href="https://github.com/AlbinR" target="_blank" rel="noreferrer"><div><FaGithub size={40}/><p>Github</p></div><p>AlbinR</p></a>
+              <a href="https://github.com/AlbinR" target="_blank" rel="noreferrer"><div><FaLinkedin size={40}/><p>LinkedIn</p></div><p>AlbinR</p></a>
+              <a href="https://github.com/AlbinR" target="_blank" rel="noreferrer"><div><FaTwitter size={40}/><p>Twitter</p></div><p>AlbinR</p></a>
             </Socials>
             <ContactForm
               netlify

@@ -9,15 +9,15 @@ export const ContactContainer = styled.div`
   display: flex;
   /* align-items: center; */
   justify-content: center;
-  @media screen and (max-width: 768px) {
-  }
+  /* @media screen and (max-width: 768px) {} */
 `;
 
 export const ContactWrapper = styled.div`
   display: flex;
   max-width: 800px;
+  width: 100%;
   align-items: center;
-  /* justify-content: center; */
+  justify-content: center;
   flex-direction: column;
 `;
 
@@ -30,64 +30,6 @@ export const Title = styled.div`
   h1{
     margin-right: 10px;
   }
-`;
-
-export const Input = styled.input`
-  background: ${(p) => p.theme.onSurface};
-  color: ${(p) => p.theme.text};
-  width: 100%;
-  padding: 16px;
-  margin: 6px 0;
-  border: none;
-  /* border: 1px solid ${(p) => p.theme.text}; */
-  border-radius: 6px;
-  font-size: 1.2rem;
-  outline: none;
-  /* @media screen and (max-width: 800px) {
-    margin: 10px 0;
-  } */
-`;
-
-export const Textarea = styled.textarea`
-  width: 100%;
-  min-height: 200px;
-  padding: 16px;
-  background: ${(p) => p.theme.onSurface};
-  color: ${(p) => p.theme.text};
-  margin: 6px 0;
-  border: none;
-  /* border: 1px solid ${(p) => p.theme.text}; */
-  border-radius: 6px;
-  font-size: 1.2rem;
-  /* @media screen and (max-width: 800px) {
-    margin: 10px 0;
-  } */
-
-`;
-
-export const ContactForm = styled.form`
-  width: 400px;
-  @media screen and (max-width: 800px) {
-    justify-content: center;
-    align-items: center;
-  }
-`;
-
-export const Socials = styled.div`
-  width: 400px;
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
-  
-  a{
-    display: flex;
-    text-decoration: none;
-    color: ${(p) => p.theme.text};
-    align-items: center;
-    justify-content: space-between;
-    margin: 14px;
-  }
-
 `;
 
 export const ContactContent = styled.div`
@@ -103,3 +45,65 @@ export const ContactContent = styled.div`
     margin-bottom: 70px;
   }
 `;
+
+export const Input = styled.input`
+  background: ${(p) => p.theme.onSurface};
+  color: ${(p) => p.theme.text};
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 12px;
+  border: none;
+  /* border: 1px solid ${(p) => p.theme.text}; */
+  border-radius: 6px;
+  font-size: 1.2rem;
+  outline: none;
+  /* @media screen and (max-width: 768px) {
+    width: 100%;
+  } */
+`;
+
+export const Textarea = styled.textarea`
+  width: 100%;
+  min-height: 200px;
+  padding: 16px;
+  background: ${(p) => p.theme.onSurface};
+  color: ${(p) => p.theme.text};
+  margin-bottom: 12px;
+  border: none;
+  /* border: 1px solid ${(p) => p.theme.text}; */
+  border-radius: 6px;
+  font-size: 1.2rem;
+  /* @media screen and (max-width: 800px) {
+    width: 100%;
+  } */
+
+`;
+
+export const ContactForm = styled.form`
+  /* width: 350px; */
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  /* @media screen and (max-width: 800px) {
+    justify-content: center;
+    align-items: center;
+  } */
+`;
+
+export const Socials = styled.div`
+  /* width: 350px; */
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  
+  a{
+    display: flex;
+    text-decoration: none;
+    color: ${(p) => p.theme.text};
+    align-items: center;
+    justify-content: space-between;
+    margin: 14px;
+  }
+
+`;
+

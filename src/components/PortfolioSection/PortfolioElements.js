@@ -28,9 +28,7 @@ export const Title = styled.div`
   h1{
     margin-right: 10px;
   }
-
 `;
-
 
 export const ProjectsContainer = styled.div`
   display: flex;

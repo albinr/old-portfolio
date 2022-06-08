@@ -1,13 +1,14 @@
 import { useContext } from "react";
 import { ThemeContext } from "../contexts/ThemeStore";
-import { HiOutlineSun , HiOutlineMoon } from 'react-icons/hi';
+import { FaRegSun, FaRegMoon } from "react-icons/fa";
+// import { HiOutlineSun , HiOutlineMoon } from 'react-icons/hi';
 import styled from "styled-components";
 
-const Moon = styled(HiOutlineMoon)`
+const Moon = styled(FaRegMoon)`
     margin: 10px;
     cursor: pointer;    
 `;
-const Sun = styled(HiOutlineSun)`
+const Sun = styled(FaRegSun)`
     margin: 10px;
     cursor: pointer;    
 `;

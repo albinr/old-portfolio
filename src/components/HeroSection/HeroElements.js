@@ -50,7 +50,7 @@ export const ImageContainer = styled.div`
 export const SmallImg = styled.div`
   display: none;
   width: 1/3;
-  height: 250px;
+  height: 200px;
   @media screen and (max-width: 768px) {
     display: block;
   } ;
@@ -58,11 +58,12 @@ export const SmallImg = styled.div`
 
 export const Header = styled.div`
   display: flex;
+  width: 100%;
   flex-direction: row;
   align-items: center;
   
   @media screen and (max-width: 768px) {
-    justify-content: center;
+    /* justify-content: center; */
   }
 `;
 
@@ -93,7 +94,7 @@ export const HeroContent = styled.div`
 `;
 
 export const Title = styled.div`
-  font-size: 1rem;
+  font-size: 1.2rem;
   p{
     color: gray;
   }
@@ -116,7 +117,7 @@ export const InfoBox = styled.div`
   flex-direction: row;
   @media screen and (max-width: 768px) {
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
   }
 `;
 

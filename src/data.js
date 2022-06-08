@@ -39,7 +39,7 @@ export const projects = [
     title: "Calculator",
     subtitle: "React Hooks",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum ",
     image: "./project-4.gif",
     gitlink: "https://reactbootcamp.com",
     demolink: "https://reactbootcamp.com",
