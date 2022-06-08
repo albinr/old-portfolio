@@ -9,10 +9,10 @@ import {
   MobileIcon,
 } from "./NavbarElements";
 import {ThemeToggler} from "../ThemeToggle";
-import { FaBars } from "react-icons/fa";
+import { HiX, HiMenu } from "react-icons/hi";
 
 
-const Navbar = ({toggle}) => {
+const Navbar = ({toggle, isOpen}) => {
   const [scrollNav, setScrollNav] = useState(false);
 
   const changeNav = () => {
@@ -45,7 +45,7 @@ const Navbar = ({toggle}) => {
               <ThemeToggler/>
           </NavTitle>
           <MobileIcon onClick={toggle}>
-            <FaBars />
+            {isOpen ? <HiX /> : <HiMenu /> }
           </MobileIcon>
           <NavMenu>
             <NavItem>

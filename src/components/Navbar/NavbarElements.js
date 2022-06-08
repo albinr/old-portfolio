@@ -13,7 +13,7 @@ export const Nav = styled.nav`
   font-size: 1rem;
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 100;
   transition: 0.5s all ease;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 
@@ -44,13 +44,12 @@ export const MobileIcon = styled.div`
   display: none;
 
   @media screen and (max-width: 768px) {
-    display: block;
-    position: absolute;
+    display: flex;
     align-items: center;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 60%);
-    font-size: 1.8rem;
+    justify-content: center;
+    align-items: center;
+    /* transform: translate(-100%, 60%); */
+    font-size: 2rem;
     cursor: pointer;
     color: ${(p) => p.theme.text};
   } ;
