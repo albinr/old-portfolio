@@ -36,9 +36,9 @@ export const Input = styled.input`
   border-radius: 6px;
   font-size: 1.2rem;
   outline: none;
-  @media screen and (max-width: 800px) {
+  /* @media screen and (max-width: 800px) {
     margin: 10px 0;
-  }
+  } */
 `;
 
 export const Textarea = styled.textarea`
@@ -52,9 +52,9 @@ export const Textarea = styled.textarea`
   /* border: 1px solid ${(p) => p.theme.text}; */
   border-radius: 6px;
   font-size: 1.2rem;
-  @media screen and (max-width: 800px) {
+  /* @media screen and (max-width: 800px) {
     margin: 10px 0;
-  }
+  } */
 
 `;
 
@@ -78,15 +78,21 @@ export const Socials = styled.div`
     color: ${(p) => p.theme.text};
     align-items: center;
     justify-content: space-between;
-    margin: 20px;
+    margin: 14px;
   }
 
 `;
 
 export const ContactContent = styled.div`
+  height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-bottom: 10%;
+  @media screen and (max-width: 800px) {
+    margin-bottom: 70px;
+  }
 `;

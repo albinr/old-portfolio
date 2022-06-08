@@ -8,12 +8,14 @@ const themes = {
     background: "#1c1c1c",
     text: "#fff",
     onSurface: "#3b3b3b",
+    onBackground: "rgba(0, 0, 0, 0.8)",
   },
   light: {
     accent: "#3498DB",
     background: "#fff",
     text: "#1c1c1c",
     onSurface: "#cccccc",
+    onBackground: "rgba(255, 255, 255, 0.8)",
   },
 };
 

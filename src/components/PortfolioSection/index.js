@@ -1,18 +1,18 @@
 import React from "react";
 
-// import albin from "../../images/albin.jpg";
+import albin from "../../images/albin.jpg";
 
-// import { projects } from "../../data";
+import { projects } from "../../data";
 
 import {
   PortfolioContainer,
   PortfolioWrapper,
   Title,
-  // ProjectAlink,
-  // ProjectImg,
-  // ProjectsContainer,
-  // ProjectDiv,
-  // ProjectText,
+  ProjectAlink,
+  ProjectImg,
+  ProjectsContainer,
+  ProjectDiv,
+  ProjectText,
 } from "./PortfolioElements";
 
 const PortfolioSection = () => {
@@ -23,7 +23,7 @@ const PortfolioSection = () => {
           <Title>
             <h1>Portfolio</h1>
           </Title>
-          {/* <ProjectsContainer>
+          <ProjectsContainer>
           {projects.map((project) => (
             <ProjectAlink
             href={project.link}
@@ -42,7 +42,7 @@ const PortfolioSection = () => {
               </ProjectDiv>
             </ProjectAlink>
           ))}
-          </ProjectsContainer> */}
+          </ProjectsContainer>
         </PortfolioWrapper>
       </PortfolioContainer>
     </>

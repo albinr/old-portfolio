@@ -21,7 +21,7 @@ export const PortfolioWrapper = styled.div`
 export const Title = styled.div`
   width: 100%;
   font-size: 2rem;
-  padding: 20px;
+  padding: 20px 0;
 `;
 
 
@@ -70,5 +70,6 @@ export const ProjectText = styled.div`
   color: ${(p) => p.theme.text};
   &:hover {
     opacity: 1;
+    background: ${(p) => p.theme.onBackground};
   }
 `;
