@@ -6,11 +6,13 @@ import {
   NavItem,
   NavLinks,
   NavTitle,
+  MobileIcon,
 } from "./NavbarElements";
 import {ThemeToggler} from "../ThemeToggle";
+import { FaBars } from "react-icons/fa";
 
 
-const Navbar = () => {
+const Navbar = ({toggle}) => {
   const [scrollNav, setScrollNav] = useState(false);
 
   const changeNav = () => {
@@ -42,6 +44,9 @@ const Navbar = () => {
               </NavLinks>
               <ThemeToggler/>
           </NavTitle>
+          <MobileIcon onClick={toggle}>
+            <FaBars />
+          </MobileIcon>
           <NavMenu>
             <NavItem>
               <NavLinks

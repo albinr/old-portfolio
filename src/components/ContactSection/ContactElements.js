@@ -40,7 +40,6 @@ export const ContactContent = styled.div`
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-bottom: 10%;
   @media screen and (max-width: 800px) {
     margin-bottom: 70px;
   }
