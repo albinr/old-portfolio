@@ -20,11 +20,18 @@ export const ContactWrapper = styled.div`
   /* justify-content: center; */
   flex-direction: column;
 `;
+
 export const Title = styled.div`
   width: 100%;
-  font-size: 2rem;
+  font-size: 1.3rem;
   padding: 20px 0;
+  display: flex;
+  align-items: center;
+  h1{
+    margin-right: 10px;
+  }
 `;
+
 export const Input = styled.input`
   background: ${(p) => p.theme.onSurface};
   color: ${(p) => p.theme.text};

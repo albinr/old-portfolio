@@ -12,7 +12,7 @@ import {
 import { Button } from "../ButtonElements";
 
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
-import { HiMail } from 'react-icons/hi';
+import { HiMail, HiChat,  } from 'react-icons/hi';
 
 const ContactSection = () => {
 
@@ -44,7 +44,7 @@ const ContactSection = () => {
       <ContactContainer id="contact">
         <ContactWrapper>
           <Title>
-            <h1>Contact me</h1>
+            <h1>Contact me</h1> <HiChat size={40}/>
           </Title>
           <ContactContent>
             <Socials>

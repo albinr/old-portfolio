@@ -5,15 +5,17 @@ export const projects = [
     description:
       "The code for this portfolio site. Made with React and React-scroll.",
     image: "albin",
-    link: "https://reactbootcamp.com",
+    gitlink: "https://reactbootcamp.com",
+    demolink: "https://reactbootcamp.com",
   },
   {
     title: "BevNews",
     subtitle: "React and Python",
     description:
-      "Tracks words in The Guardian.",
+      "Tracks words in The Guardian. This group project was a school assignment.",
     image: "../../images/portfoliosite.jpg",
-    link: "https://reedbarger.com",
+    gitlink: "https://reactbootcamp.com",
+    demolink: "https://reactbootcamp.com",
   },
   {
     title: "Quire",
@@ -21,7 +23,8 @@ export const projects = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
     image: "./../images/Cargo.jpg",
-    link: "https://jsbootcamp.com",
+    gitlink: "https://reactbootcamp.com",
+    demolink: "https://reactbootcamp.com",
   },
   {
     title: "Cargo",
@@ -29,30 +32,34 @@ export const projects = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
     image: "../../images/quire.jpg",
-    link: "https://pythonbootcamp.com",
+    gitlink: "https://reactbootcamp.com",
+    demolink: "https://reactbootcamp.com",
   },
   {
-      title: "Calculator",
-      subtitle: "React Hooks",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-      image: "./project-4.gif",
-      link: "https://pythonbootcamp.com",
+    title: "Calculator",
+    subtitle: "React Hooks",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+    image: "./project-4.gif",
+    gitlink: "https://reactbootcamp.com",
+    demolink: "https://reactbootcamp.com",
   },
   {
-      title: "Camera",
-      subtitle: "React Hooks",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-      image: "./project-4.gif",
-      link: "https://pythonbootcamp.com",
+    title: "Camera",
+    subtitle: "React Hooks",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+    image: "./project-4.gif",
+    gitlink: "https://reactbootcamp.com",
+    demolink: "https://reactbootcamp.com",
   },
   {
-      title: "Gains",
-      subtitle: "React Hooks",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-      image: "./project-4.gif",
-      link: "https://pythonbootcamp.com",
+    title: "Gains",
+    subtitle: "React Hooks",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+    image: "./project-4.gif",
+    gitlink: "https://reactbootcamp.com",
+    demolink: "https://reactbootcamp.com",
   },
 ];

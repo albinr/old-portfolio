@@ -1,8 +1,8 @@
 import React from "react";
-
 import albin from "../../images/albin.jpg";
-
 import { projects } from "../../data";
+import { AButton } from "../AButtonElements";
+import { HiTerminal } from "react-icons/hi";
 
 import {
   PortfolioContainer,
@@ -12,7 +12,8 @@ import {
   ProjectImg,
   ProjectsContainer,
   ProjectDiv,
-  ProjectText,
+  ProjectInfo,
+  ButtonBox,
 } from "./PortfolioElements";
 
 const PortfolioSection = () => {
@@ -21,7 +22,7 @@ const PortfolioSection = () => {
       <PortfolioContainer id="portfolio">
         <PortfolioWrapper>
           <Title>
-            <h1>Portfolio</h1>
+            <h1>Portfolio</h1> <HiTerminal size={40}/>
           </Title>
           <ProjectsContainer>
           {projects.map((project) => (
@@ -34,11 +35,17 @@ const PortfolioSection = () => {
                 alt="gallery"
                 src={albin}
               />
-                <ProjectText>
-                  <h2>{project.subtitle}</h2>
-                  <h1>{project.title}</h1>
-                  <p>{project.description}</p>
-                </ProjectText>
+                <ProjectInfo>
+                  <div>
+                    <h2>{project.subtitle}</h2>
+                    <h1>{project.title}</h1>
+                    <p>{project.description}</p>
+                  </div>
+                  <ButtonBox>
+                    <AButton href={project.gitlink} key={project.image}>GitHub</AButton>
+                    <AButton href={project.demolink} key={project.image}>Live Demo</AButton>
+                  </ButtonBox>
+                </ProjectInfo>
               </ProjectDiv>
             </ProjectAlink>
           ))}
