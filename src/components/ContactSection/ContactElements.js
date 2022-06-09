@@ -55,7 +55,8 @@ export const ContactContent = styled.div`
 export const ContentBox = styled.div`
   width: 100%;
   @media (min-width: 768px) {
-    width: 50%;
+    /* width: 50%; */
+    width: 100%;
   }
 `;
 
@@ -104,6 +105,12 @@ export const ContactForm = styled.form`
   } */
 `;
 
+export const NameEmail = styled.div`
+  flex-direction: row;
+  display: flex;
+`;
+
+
 export const Socials = styled.div`
   /* width: 350px; */
   display: flex;
@@ -117,7 +124,10 @@ export const Socials = styled.div`
     color: ${(p) => p.theme.text};
     align-items: center;
     justify-content: space-between;
+    padding: 10px;
+    border-radius: 6px;
     margin: 14px;
+    background: ${(p) => p.theme.onSurface};
   }
 
 `;
