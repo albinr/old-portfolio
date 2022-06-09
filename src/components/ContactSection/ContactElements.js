@@ -16,6 +16,7 @@ export const ContactWrapper = styled.div`
   display: flex;
   max-width: 800px;
   width: 100%;
+  height: 100%;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -33,7 +34,13 @@ export const Title = styled.div`
 `;
 
 export const ContactContent = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
   height: 100%;
+  align-items: center;
+  justify-content: center;
+  /* height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -42,8 +49,16 @@ export const ContactContent = styled.div`
   flex-wrap: wrap;
   @media screen and (max-width: 800px) {
     margin-bottom: 70px;
+  } */
+`;
+
+export const ContentBox = styled.div`
+  width: 100%;
+  @media (min-width: 768px) {
+    width: 50%;
   }
 `;
+
 
 export const Input = styled.input`
   background: ${(p) => p.theme.onSurface};
@@ -94,6 +109,7 @@ export const Socials = styled.div`
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
+  width: 100%;
   
   a{
     display: flex;

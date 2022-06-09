@@ -36,7 +36,7 @@ export const ProjectsContainer = styled.div`
 `;
 
 export const ProjectAlink = styled.div`
-  text-decoration: none;
+  /* text-decoration: none; */
   padding: 6px;
   /* height: 200px;
   width: 100%; */
@@ -75,7 +75,6 @@ export const ProjectInfo = styled.div`
   width: 100%;
   height: 100%;
   color: ${(p) => p.theme.text};
-  transition: 300ms;
   border-radius: 6px;
   display: flex;
   flex-direction: column;
