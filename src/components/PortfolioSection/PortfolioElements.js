@@ -22,7 +22,8 @@ export const PortfolioWrapper = styled.div`
 export const Title = styled.div`
   width: 100%;
   font-size: 1.3rem;
-  padding: 20px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  margin: 20px 0;
   display: flex;
   align-items: center;
   h1{

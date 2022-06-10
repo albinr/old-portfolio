@@ -5,14 +5,14 @@ import { ThemeContext } from "./contexts/ThemeStore";
 const themes = {
   dark: {
     accent: "#3498DB",
-    background: "#1c1c1c",
-    text: "#fff",
+    background: "#18191A",
+    text: "#FFFFFF",
     onSurface: "#3b3b3b",
     onBackground: "rgba(0, 0, 0, 0.8)",
   },
   light: {
     accent: "#3498DB",
-    background: "#fff",
+    background: "#FFFFFF",
     text: "#1c1c1c",
     onSurface: "#cccccc",
     onBackground: "rgba(255, 255, 255, 0.8)",
@@ -23,7 +23,7 @@ const GlobalStyle = createGlobalStyle`
   * {
     margin: 0;
     padding: 0;
-    transition: all 0.2s;
+    transition: all 0.1s;
   }
   &::-webkit-scrollbar {
   width: 10px; /* Mostly for vertical scrollbars */

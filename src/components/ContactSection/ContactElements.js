@@ -15,17 +15,17 @@ export const ContactContainer = styled.div`
 export const ContactWrapper = styled.div`
   display: flex;
   max-width: 800px;
+  flex-direction: column;
   width: 100%;
   height: 100%;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
 `;
 
 export const Title = styled.div`
   width: 100%;
   font-size: 1.3rem;
-  padding: 20px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  margin: 20px 0;
   display: flex;
   align-items: center;
   h1{

@@ -28,7 +28,7 @@ export const Textarea = styled.textarea`
 export const Form = styled.form`
   /* width: 350px; */
   display: flex;
-  max-width: 600px;
+  /* max-width: 600px; */
   width: 100%;
   flex-direction: column;
   /* @media screen and (max-width: 800px) {

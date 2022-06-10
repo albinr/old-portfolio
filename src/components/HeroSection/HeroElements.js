@@ -99,7 +99,7 @@ export const Title = styled.div`
     color: gray;
   }
   @media screen and (max-width: 768px) {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     padding-left: 10px;
   }
 `;
@@ -108,7 +108,7 @@ export const Text = styled.div`
  padding-top: 10px;
  font-size: 1.2rem;
   @media screen and (max-width: 768px) {
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
 `;
 
