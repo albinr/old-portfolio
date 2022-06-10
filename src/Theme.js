@@ -8,7 +8,7 @@ const themes = {
     background: "#18191A",
     text: "#FFFFFF",
     onSurface: "#3b3b3b",
-    onBackground: "rgba(0, 0, 0, 0.4)",
+    onBackground: "rgba(0, 0, 0, 0.1)",
   },
   light: {
     accent: "#3498DB",
