@@ -8,14 +8,14 @@ const themes = {
     background: "#18191A",
     text: "#FFFFFF",
     onSurface: "#3b3b3b",
-    onBackground: "rgba(0, 0, 0, 0.8)",
+    onBackground: "rgba(0, 0, 0, 0.4)",
   },
   light: {
     accent: "#3498DB",
     background: "#FFFFFF",
     text: "#1c1c1c",
     onSurface: "#cccccc",
-    onBackground: "rgba(255, 255, 255, 0.8)",
+    onBackground: "rgba(255, 255, 255, 0.4)",
   },
 };
 
@@ -23,15 +23,15 @@ const GlobalStyle = createGlobalStyle`
   * {
     margin: 0;
     padding: 0;
-    transition: all 0.1s;
+    transition: all 0.2s;
   }
   &::-webkit-scrollbar {
   width: 10px; /* Mostly for vertical scrollbars */
   height: 10px; /* Mostly for horizontal scrollbars */
   }
   &::-webkit-scrollbar-thumb { /* Foreground */
-  /* background: ${(p) => p.theme.text}; */
-  background: gray;
+  background: ${(p) => p.theme.text};
+  /* background: gray; */
   border-radius: 6px;
   }
   &::-webkit-scrollbar-track { /* Background */

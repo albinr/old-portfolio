@@ -2,8 +2,9 @@ import styled from "styled-components";
 import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
-  /* background: ${({ scrollNav }) => (scrollNav ? (p) => p.theme.background  : "transparent")}; */
-  background: ${(p) => p.theme.background};
+  background: ${({ scrollNav }) => (scrollNav ? (p) => p.theme.onBackground  : "transparent")};
+  backdrop-filter: blur(4px);
+  /* background: ${(p) => p.theme.background}; */
   height: 70px;
   margin-top: -70px;
   display: flex;
@@ -14,7 +15,8 @@ export const Nav = styled.nav`
   top: 0;
   z-index: 100;
   transition: 0.5s all ease;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  /* border-bottom: 1px solid rgba(0, 0, 0, 0.3); */
+  border-bottom: ${({ scrollNav }) => (scrollNav ? "1px solid rgba(0, 0, 0, 0.3)"  : "1px solid rgba(0, 0, 0, 0)")};
 
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
@@ -29,7 +31,7 @@ export const NavbarContainer = styled.div`
   z-index: 1;
   width: 100%;
   padding: 0 20px;
-  max-width: 1020px;
+  max-width: 840px;
 `;
 
 export const Name = styled.h1`
@@ -45,7 +47,7 @@ export const MobileIcon = styled.div`
     justify-content: center;
     align-items: center;
     border-radius: 6px;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     padding: 4px;
     cursor: pointer;
     color: ${(p) => p.theme.text};
@@ -63,7 +65,7 @@ export const NavMenu = styled.ul`
   justify-content: space-between;
   width: 300px;
   border-radius: 6px;
-  /* background: ${(p) => p.theme.background}; */
+  background: ${(p) => p.theme.background};
   @media screen and (max-width: 768px) {
     display: none;
   }
