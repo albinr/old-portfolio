@@ -28,15 +28,13 @@ const PortfolioSection = () => {
               title="Portfolio"
               subtitle="React and React-scroll" 
               description="This is my portfolio website. It is a React-scroll project." 
-              gitLink="https://github.com/AlbinR/portfolio"
-              demoLink=""/>
+              gitLink="https://github.com/AlbinR/portfolio"/>
             <Card 
               imageUrl={bevnewsImg} 
               title="BevNews" 
               subtitle="React, Firebase and Guardian API" 
               description="This was a school project where we created a website that tracked words popularity in the Guardian API." 
-              gitLink="https://github.com/Viktor-Hultman/BevNews"
-              demoLink=""/>
+              gitLink="https://github.com/Viktor-Hultman/BevNews"/>
             <Card 
               imageUrl={quireImg}
               title="Quire" 
@@ -49,22 +47,19 @@ const PortfolioSection = () => {
               title="Cargo" 
               subtitle="React, Firebase and Figma"
               description="This was a ux design project where we designed a car rental app using Figma. When the design was finished we individually created a hard coded app using React and Firebase." 
-              gitLink="https://github.com/AlbinR/cargo"
-              demoLink=""/>
+              gitLink="https://github.com/AlbinR/cargo"/>
             <Card 
               imageUrl={gainsImg} 
               title="Gains" 
               subtitle="React Native, Expo Go, TypeScript, GraphQL and MongoDB" 
               description="This was the final project in the front-end course. We created a gym/training mobile app that aims to help the user create and preform a workout." 
-              gitLink="https://github.com/AlbinR/Gains"
-              demoLink=""/>
+              gitLink="https://github.com/AlbinR/Gains"/>
             <Card 
               imageUrl={calculatorImg}
               title="Calculator"
               subtitle="React" 
               description="A simple calculator that I created using React. With a tutorial." 
-              gitLink="https://github.com/AlbinR/react-calculator"
-              demoLink=""/>
+              gitLink="https://github.com/AlbinR/react-calculator"/>
           </ProjectsContainer>
         </PortfolioWrapper>
       </PortfolioContainer>
