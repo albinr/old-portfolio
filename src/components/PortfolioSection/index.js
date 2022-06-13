@@ -5,12 +5,18 @@ import {
   Title,
   ProjectsContainer,
 } from "./PortfolioElements";
-import portfolioImg from "../../images/portfolio.png";
-import bevnewsImg from "../../images/bevnews.jpg";
-import quireImg from "../../images/quire.jpg";
-import cargoImg from "../../images/cargo.jpg";
-import gainsImg from "../../images/gains.png";
-import calculatorImg from "../../images/calculator.png";
+import portfolioImg from "./portfolio.png";
+import bevnewsImg from "./bevnews.jpg";
+import quireImg from "./quire.jpg";
+import cargoImg from "./cargo.jpg";
+import gainsImg from "./gains.png";
+import calculatorImg from "./calculator.png";
+// import portfolioImg from "../../images/portfolio.png";
+// import bevnewsImg from "../../images/bevnews.jpg";
+// import quireImg from "../../images/quire.jpg";
+// import cargoImg from "../../images/cargo.jpg";
+// import gainsImg from "../../images/gains.png";
+// import calculatorImg from "../../images/calculator.png";
 import { HiTerminal } from "react-icons/hi";
 import Card from "../Cards";
 
