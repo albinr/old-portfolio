@@ -9,7 +9,7 @@ import {
 
 import { AButton } from "../AButtonElements";
 
-export const Card = ({ title, subtitle, imageUrl, description, year, gitLink, demoLink }) => {
+export const Card = ({ title, subtitle, imageUrl, description, gitLink, demoLink }) => {
   return (
     <>
       <ProjectWrapper>
@@ -25,8 +25,8 @@ export const Card = ({ title, subtitle, imageUrl, description, year, gitLink, de
                 <p>{description}</p>
               </div>
               <ButtonBox>
-                <AButton href={gitLink} key={imageUrl}>GitHub</AButton>
-                {demoLink ? <AButton href={demoLink} key={imageUrl}>Demo</AButton> : null}
+                <AButton href={gitLink}>GitHub</AButton>
+                {demoLink ? <AButton href={demoLink}>Demo</AButton> : null}
               </ButtonBox>
             </ProjectInfo>
           </ProjectDiv>
