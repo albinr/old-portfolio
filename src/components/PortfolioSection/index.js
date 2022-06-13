@@ -4,7 +4,7 @@ import bevnewsImg from "../../images/bevnews.jpg";
 import quireImg from "../../images/quire.jpg";
 import cargoImg from "../../images/cargo.jpg";
 import gainsImg from "../../images/gains.png";
-import calculatorImg from "../../images/calculator.PNG";
+import calculatorImg from "../../images/calculator.png";
 import { HiTerminal } from "react-icons/hi";
 import Card from "../Cards";
 import {
