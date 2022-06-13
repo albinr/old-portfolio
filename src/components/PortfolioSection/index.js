@@ -2,7 +2,7 @@ import React from "react";
 import portfolioImg from "../../images/portfolio.png";
 import bevnewsImg from "../../images/bevnews.jpg";
 import quireImg from "../../images/quire.jpg";
-// import cargoImg from "../../images/cargo.jpg";
+import cargoImg from "../../images/cargo.jpg";
 import gainsImg from "../../images/gains.png";
 import calculatorImg from "../../images/calculator.png";
 import { HiTerminal } from "react-icons/hi";
@@ -45,7 +45,7 @@ const PortfolioSection = () => {
               gitLink="https://github.com/Voltair88/fe20tp1_-Vellum-"
               demoLink="http://vellum.surge.sh/"/>
             <Card 
-              // imageUrl={cargoImg} 
+              imageUrl={cargoImg} 
               title="Cargo" 
               subtitle="React, Firebase and Figma"
               description="This was a ux design project where we designed a car rental app using Figma. When the design was finished we individually created a hard coded app using React and Firebase." 
