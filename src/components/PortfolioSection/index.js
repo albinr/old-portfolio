@@ -1,19 +1,17 @@
 import React from "react";
-import albin from "../../images/albin.jpg";
-import { projects } from "../../data";
-import { AButton } from "../AButtonElements";
+import portfolioImg from "../../images/portfolio.png";
+import bevnewsImg from "../../images/bevnews.jpg";
+import quireImg from "../../images/quire.jpg";
+import cargoImg from "../../images/cargo.jpg";
+import gainsImg from "../../images/gains.png";
+import calculatorImg from "../../images/calculator.PNG";
 import { HiTerminal } from "react-icons/hi";
-
+import Card from "../Cards";
 import {
   PortfolioContainer,
   PortfolioWrapper,
   Title,
-  ProjectAlink,
-  ProjectImg,
   ProjectsContainer,
-  ProjectDiv,
-  ProjectInfo,
-  ButtonBox,
 } from "./PortfolioElements";
 
 const PortfolioSection = () => {
@@ -25,30 +23,48 @@ const PortfolioSection = () => {
             <h1>Portfolio</h1> <HiTerminal size={40}/>
           </Title>
           <ProjectsContainer>
-          {projects.map((project) => (
-            <ProjectAlink
-            href={project.link}
-            key={project.image}
-            >
-            <ProjectDiv>
-              <ProjectImg
-                alt="gallery"
-                src={albin}
-              />
-                <ProjectInfo>
-                  <div>
-                    <h2>{project.subtitle}</h2>
-                    <h1>{project.title}</h1>
-                    <p>{project.description}</p>
-                  </div>
-                  <ButtonBox>
-                    <AButton href={project.gitlink} key={project.image}>GitHub</AButton>
-                    <AButton href={project.demolink} key={project.image}>Live Demo</AButton>
-                  </ButtonBox>
-                </ProjectInfo>
-              </ProjectDiv>
-            </ProjectAlink>
-          ))}
+            <Card 
+              imageUrl={portfolioImg} 
+              title="Portfolio"
+              subtitle="React and React-scroll" 
+              description="This is my portfolio website. It is a React-scroll project." 
+              gitLink="https://github.com/AlbinR/portfolio"
+              demoLink=""/>
+            <Card 
+              imageUrl={bevnewsImg} 
+              title="BevNews" 
+              subtitle="React, Firebase and Guardian API" 
+              description="This was a school project where we created a website that tracked words popularity in the Guardian API." 
+              gitLink="https://github.com/Viktor-Hultman/BevNews"
+              demoLink=""/>
+            <Card 
+              imageUrl={quireImg}
+              title="Quire" 
+              subtitle="JavaScript and Local Storage" 
+              description="This was a school group project where we created a note taking app using JavaScript and Local Storage." 
+              gitLink="https://github.com/Voltair88/fe20tp1_-Vellum-"
+              demoLink="http://vellum.surge.sh/"/>
+            <Card 
+              imageUrl={cargoImg} 
+              title="Cargo" 
+              subtitle="React, Firebase and Figma"
+              description="This was a ux design project where we designed a car rental app using Figma. When the design was finished we individually created a hard coded app using React and Firebase." 
+              gitLink="https://github.com/AlbinR/cargo"
+              demoLink=""/>
+            <Card 
+              imageUrl={gainsImg} 
+              title="Gains" 
+              subtitle="React Native, Expo Go, TypeScript, GraphQL and MongoDB" 
+              description="This was the final project in the front-end course. We created a gym/training mobile app that aims to help the user create and preform a workout." 
+              gitLink="https://github.com/AlbinR/Gains"
+              demoLink=""/>
+            <Card 
+              imageUrl={calculatorImg}
+              title="Calculator"
+              subtitle="React" 
+              description="A simple calculator that I created using React. With a tutorial." 
+              gitLink="https://github.com/AlbinR/react-calculator"
+              demoLink=""/>
           </ProjectsContainer>
         </PortfolioWrapper>
       </PortfolioContainer>

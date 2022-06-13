@@ -5,7 +5,7 @@ import HeroSection from "../components/HeroSection";
 import Navbar from "../components/Navbar";
 import PortfolioSection from "../components/PortfolioSection";
 import ContactSection from "../components/ContactSection";
-// import Footer from "../components/Footer";
+import Footer from "../components/Footer";
 // import MobileNavbar from "../components/MobileNavbar";
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,6 +20,7 @@ const Home = () => {
       <HeroSection />
       <PortfolioSection />
       <ContactSection />
+      <Footer/>
     </>
   );
 };

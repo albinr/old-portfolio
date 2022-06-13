@@ -63,7 +63,7 @@ const Container = styled.div`
         flex-direction: row;
         width: fit-content;
         /* padding: 10px; */
-        margin: 6px;
+        /* margin: 6px; */
         padding: 6px;
         /* background: ${(p) => p.theme.onSurface}; */
         color: ${(p) => p.theme.text};

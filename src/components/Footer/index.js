@@ -4,7 +4,7 @@ import { FooterContainer } from "./FooterElements";
 const Footer = () => {
   return (
     <FooterContainer>
-      <p>Albin Ryberg</p>
+        <p>© 2022 Albin Ryberg. All Rights Reserved.</p>
     </FooterContainer>
   );
 };

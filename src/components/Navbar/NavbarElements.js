@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
-  background: ${({ scrollNav }) => (scrollNav ? (p) => p.theme.onBackground  : "transparent")};
+  /* background: ${({ scrollNav }) => (scrollNav ? (p) => p.theme.onBackground  : "transparent")}; */
   backdrop-filter: blur(4px);
   /* background: ${(p) => p.theme.background}; */
   height: 70px;

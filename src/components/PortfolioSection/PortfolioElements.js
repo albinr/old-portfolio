@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const PortfolioContainer = styled.div`
   background: ${(p) => p.theme.background};
   color: ${(p) => p.theme.text};
+
   width: 100%;
   min-height: 100vh;
   padding: 0 20px;
@@ -14,6 +15,7 @@ export const PortfolioContainer = styled.div`
 export const PortfolioWrapper = styled.div`
   display: flex;
   max-width: 800px;
+  width: 100%;
   align-items: center;
   flex-direction: column;
   margin-bottom: 70px;
@@ -22,7 +24,8 @@ export const PortfolioWrapper = styled.div`
 export const Title = styled.div`
   width: 100%;
   font-size: 1.3rem;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  /* border-bottom: 1px solid rgba(0, 0, 0, 0.3); */
+  border-bottom: 1px solid ${(p) => p.theme.onSurface};
   margin: 20px 0;
   display: flex;
   align-items: center;

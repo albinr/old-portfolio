@@ -1,101 +1,60 @@
 import styled from "styled-components";
-import { FaGithub } from "react-icons/fa";
 
-export const CardContainer = styled.a`
-  display: flex;
-  flex-direction: column;
-  /* background-color: #171a21; */
-  /* color: #fff; */
-  border-radius: 4px;
-  overflow: hidden;
-  /* border: 1px solid #ccc; */
-  margin: 10px;
-  transition: top 0.2s ease-in-out;
-  position: relative;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  @media screen and (max-width: 768px) {
-    zoom: 0.65;
-    -moz-transform: scale(0.72);
-    transition: top 0.2s ease-in-out;
+export const ProjectWrapper = styled.div`
+  padding: 8px;
+  @media (min-width: 768px) {
+    width: 50%;
   }
 `;
 
-export const CardInfoBox = styled.div`
+export const ProjectDiv = styled.div`
+  display: flex;
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+  height: 250px;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+`;
+
+export const ProjectImg = styled.img`
+  position: absolute;
+  /* border-radius: 6px; */
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: flex;
+  -o-object-fit: cover;
+`;
+
+export const ProjectInfo = styled.div`
+  opacity: 0;
+  padding: 10px;
+  z-index: 6;
+  width: 100%;
+  height: 100%;
+  color: ${(p) => p.theme.text};
+  /* border-radius: 6px; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 300px;
-`;
-export const CardContent = styled.div`
-  flex: 1 0 auto;
-`;
-
-export const CardTitle = styled.div`
-  padding: 6px;
-  font-size: 35px;
-`;
-
-export const CardText = styled.div`
-  padding: 6px;
-  letter-spacing: 1px;
-`;
-
-export const IconBox = styled.div`
-  display: flex;
-  align-items: center;
-`;
-
-export const GitIcon = styled(FaGithub)`
-  font-size: 20px;
-  margin-right: 2px;
-`;
-
-export const ImageContainer = styled.div`
-  width: 300px;
-  height: 200px;
-  background-color: #fff;
-  img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
-    transition: 0.5s;
-  }
-`;
-
-export const Year = styled.p`
-  font-size: 18px;
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  border-radius: 6px;
-  padding: 4px;
-  bottom: 8px;
-  right: 8px;
-`;
-
-export const AButton = styled.a`
-  border-radius: 10px;
-  background: ${({primary}) => (primary ? '#3498DB' : '#010606')};
-  white-space: nowrap;
-  padding: ${({big}) => (big ? '10px 14px' : '10px 14px')};
-  color: ${({dark}) => (dark ? '#010606' : '#fff')};
-  font-size: ${({fontBig}) => (fontBig ? '20px' : '16px')};
-  outline: none;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.2s ease-in-out;
-  margin: 0px 0px 8px 8px;
-  text-decoration: none;
-
   &:hover {
-      transition: all 0.2s ease-in-out;
-      background: ${({primary}) => () => primary ? '#fff' : '#3498DB'};
+    opacity: 1;
+    background: ${(p) => p.theme.onBackground};
+    backdrop-filter: blur(4px);
   }
 `;
+
+export const ButtonBox = styled.div`
+  display: flex;
+  flex-direction: row;
+  a{
+    margin-right: 10px;
+  }
+`;
+
 
 
 // import styled from "styled-components";
