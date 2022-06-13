@@ -1,4 +1,10 @@
 import React from "react";
+import {
+  PortfolioContainer,
+  PortfolioWrapper,
+  Title,
+  ProjectsContainer,
+} from "./PortfolioElements";
 import portfolioImg from "../../images/portfolio.png";
 import bevnewsImg from "../../images/bevnews.jpg";
 import quireImg from "../../images/quire.jpg";
@@ -7,12 +13,7 @@ import gainsImg from "../../images/gains.png";
 import calculatorImg from "../../images/calculator.png";
 import { HiTerminal } from "react-icons/hi";
 import Card from "../Cards";
-import {
-  PortfolioContainer,
-  PortfolioWrapper,
-  Title,
-  ProjectsContainer,
-} from "./PortfolioElements";
+
 
 const PortfolioSection = () => {
   return (
