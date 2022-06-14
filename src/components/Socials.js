@@ -53,7 +53,6 @@ const Container = styled.div`
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 100%;
     margin: 0 0 20px 0;
     a{
         text-decoration: none;
@@ -62,6 +61,7 @@ const Container = styled.div`
         display: flex;
         flex-direction: row;
         width: fit-content;
+        height: fit-content;
         /* padding: 10px; */
         /* margin: 6px; */
         padding: 6px;

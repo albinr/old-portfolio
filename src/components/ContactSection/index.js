@@ -3,6 +3,7 @@ import {
   ContactContainer,
   ContactWrapper,
   Title,
+  ContactContent,
 } from "./ContactElements";
 import ContactForm from "../ContactForm";
 import { MdChat } from "react-icons/md";
@@ -16,8 +17,10 @@ const ContactSection = () => {
           <Title>
             <h1>Contact me</h1> <MdChat size={40}/>
           </Title>
-          <Socials/>
-          <ContactForm />
+          <ContactContent>
+            <Socials/>
+            <ContactForm />
+          </ContactContent>
         </ContactWrapper>
       </ContactContainer>
     </>

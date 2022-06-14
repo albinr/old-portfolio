@@ -34,7 +34,7 @@ const PortfolioSection = () => {
               imageUrl={portfolioImg} 
               title="Portfolio"
               subtitle="React and React-scroll" 
-              description="This is my portfolio website. It is a React-scroll project." 
+              description="This is my portfolio website you are looking at right now." 
               gitLink="https://github.com/AlbinR/portfolio"/>
             <Card 
               imageUrl={bevnewsImg} 
