@@ -2,25 +2,26 @@ import styled from 'styled-components';
 import {Link} from 'react-scroll';
 
 export const ScrollButton = styled(Link)`
-    border-radius: 10px;
-    background: ${({primary}) => (primary ? '#3498DB' : '#010606')};
+    border-radius: 6px;
     white-space: nowrap;
-    padding: ${({big}) => (big ? '10px 14px' : '10px 14px')};
-    color: ${({dark}) => (dark ? '#010606' : '#fff')};
-    font-size: ${({fontBig}) => (fontBig ? '20px' : '16px')};
+    text-decoration: none;
     outline: none;
-    border: none;
-    width: fit-content;
     cursor: pointer;
     display: flex;
     justify-content: center;
+    width: fit-content;
     align-items: center;
     transition: all 0.2s ease-in-out;
-    margin: 6px;
-
+    background: ${(p) => p.theme.background};
+    border: 1px solid #ccc;
+    padding: 10px 14px;
+    color: ${(p) => p.theme.text};
+    font-size: 1rem;
     &:hover {
         transition: all 0.2s ease-in-out;
-        background: ${({primary}) => () => primary ? '#fff' : '#3498DB'};
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        color: ${(p) => p.theme.background};
+        background: ${(p) => p.theme.text};
     }
 
 `;
