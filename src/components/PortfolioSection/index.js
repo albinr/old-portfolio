@@ -41,7 +41,8 @@ const PortfolioSection = () => {
               title="BevNews" 
               subtitle="React, Firebase and Guardian API" 
               description="This was a school project where we created a website that tracked words popularity in the Guardian API." 
-              gitLink="https://github.com/Viktor-Hultman/BevNews"/>
+              gitLink="https://github.com/Viktor-Hultman/BevNews"
+              demoLink="https://bevnews.surge.sh/landing"/>
             <Card 
               imageUrl={quireImg}
               title="Quire" 

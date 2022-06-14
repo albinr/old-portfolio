@@ -5,9 +5,10 @@ import {
   ButtonBox,
   ProjectDiv,
   ProjectWrapper,
+  GitIcon,
 } from "./CardElements";
-
 import { AButton } from "../AButtonElements";
+
 
 export const Card = ({ title, subtitle, imageUrl, description, gitLink, demoLink }) => {
   return (
@@ -25,7 +26,7 @@ export const Card = ({ title, subtitle, imageUrl, description, gitLink, demoLink
                 <p>{description}</p>
               </div>
               <ButtonBox>
-                <AButton href={gitLink}>GitHub</AButton>
+                <AButton href={gitLink}><GitIcon size={20}/>GitHub</AButton>
                 {demoLink ? <AButton href={demoLink}>Demo</AButton> : null}
               </ButtonBox>
             </ProjectInfo>
