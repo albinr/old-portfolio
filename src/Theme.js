@@ -25,6 +25,9 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     transition: all 0.2s;
   }
+  body{
+    background: ${(p) => p.theme.background};
+  }
   &::-webkit-scrollbar {
   width: 10px; /* Mostly for vertical scrollbars */
   height: 10px; /* Mostly for horizontal scrollbars */
