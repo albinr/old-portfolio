@@ -31,7 +31,7 @@ export const NavbarContainer = styled.div`
   z-index: 1;
   width: 100%;
   padding: 0 20px;
-  max-width: 840px;
+  max-width: 1100px;
 `;
 
 export const Name = styled.h1`
@@ -65,7 +65,7 @@ export const NavMenu = styled.ul`
   justify-content: space-between;
   width: 300px;
   border-radius: 6px;
-  background: ${(p) => p.theme.background};
+  /* background: ${(p) => p.theme.background}; */
   @media screen and (max-width: 768px) {
     display: none;
   }

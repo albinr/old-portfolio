@@ -32,9 +32,10 @@ export const HeroContainer = styled.div`
 
 export const HeroWrapper = styled.div`
   display: flex;
-  max-width: 800px;
+  max-width: 900px;
   align-items: center;
   flex-direction: column;
+
 `;
 
 export const ImageContainer = styled.div`
@@ -81,7 +82,7 @@ export const HeroContent = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 500px;
+  max-width: 600px;
   max-height: 600px;
   padding-left: 20px;
   letter-spacing: 1.5px;
@@ -94,7 +95,7 @@ export const HeroContent = styled.div`
 `;
 
 export const Title = styled.div`
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   p{
     color: gray;
   }
@@ -106,7 +107,7 @@ export const Title = styled.div`
 
 export const Text = styled.div`
  padding-top: 10px;
- font-size: 1.2rem;
+ font-size: 1.3rem;
   @media screen and (max-width: 768px) {
     font-size: 1rem;
   }

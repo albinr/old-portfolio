@@ -37,16 +37,16 @@ const HeroSection = () => {
               <Title>
                   <p>HELLO!</p>
                   <h1>I'm Albin Ryberg,</h1>
-                  <h1>a front end developer</h1>
+                  <h1>a Front End Developer</h1>
                   <h1>from Stockholm.</h1>
               </Title>
             </Header>
             <Text>
-              <p>I am currently studying front-end
-                development at KYH in Stockholm, Sweden.</p>
+              <p>I have recently graduated from the front-end
+                development course at KYH in Stockholm, Sweden.</p>
               <p>When im not studying or developing I like spending time with
                 friends, working out and playing some video games.</p>
-              <p>I enjoy tinkering with things like keyboards and stuff too.</p>
+              <p>I enjoy tinkering with things like mechanical keyboards and stuff too.</p>
             </Text>
               <BtnBox>
                 <AButton href={CV} download>Download CV<DlIcon/></AButton>

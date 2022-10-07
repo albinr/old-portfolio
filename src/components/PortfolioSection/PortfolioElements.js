@@ -14,7 +14,7 @@ export const PortfolioContainer = styled.div`
 
 export const PortfolioWrapper = styled.div`
   display: flex;
-  max-width: 800px;
+  max-width: 900px;
   width: 100%;
   align-items: center;
   flex-direction: column;

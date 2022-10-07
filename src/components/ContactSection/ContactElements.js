@@ -12,7 +12,7 @@ export const ContactContainer = styled.div`
 
 export const ContactWrapper = styled.div`
   display: flex;
-  max-width: 800px;
+  max-width: 900px;
   flex-direction: column;
   width: 100%;
   height: 100%;
