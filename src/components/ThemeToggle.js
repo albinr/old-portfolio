@@ -5,12 +5,24 @@ import { FaRegSun, FaRegMoon } from "react-icons/fa";
 import styled from "styled-components";
 
 const Moon = styled(FaRegMoon)`
-    margin: 10px;
-    cursor: pointer;    
+    margin: 0 1rem;
+    height: 100%;
+    cursor: pointer;
+    color: ${(p) => p.theme.text};
+    :hover {
+        color: ${(p) => p.theme.accent};
+        transition: 0.2s all ease-out;
+    } 
 `;
 const Sun = styled(FaRegSun)`
-    margin: 10px;
-    cursor: pointer;    
+    margin: 0 1rem;
+    height: 100%;
+    cursor: pointer;
+    color: ${(p) => p.theme.text};
+    :hover {
+        color: ${(p) => p.theme.accent};
+        transition: 0.2s all ease-out;
+    }
 `;
 
 export const ThemeToggler = () => {
@@ -18,9 +30,9 @@ export const ThemeToggler = () => {
     return (
     <>
         {theme === "dark" ? (
-        <Moon size={26} color="#fff" onClick={() => switchTheme("light")} />
+        <Moon size={22}  onClick={() => switchTheme("light")} />
         ) : (
-        <Sun size={26} color="#000" onClick={() => switchTheme("dark")} />
+        <Sun size={22}  onClick={() => switchTheme("dark")} />
         )}
     </>
     );

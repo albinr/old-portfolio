@@ -2,15 +2,15 @@ import styled from "styled-components";
 import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
-  /* background: ${({ scrollNav }) => (scrollNav ? (p) => p.theme.onBackground  : "transparent")}; */
-  backdrop-filter: blur(4px);
+  background: ${({ scrollNav }) => (scrollNav ?  (p) => p.theme.background : "transparent")};
+  /* backdrop-filter: blur(4px); */
   /* background: ${(p) => p.theme.background}; */
   height: 70px;
   margin-top: -70px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1rem;
+  font-size: 1.2rem;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -53,7 +53,6 @@ export const MobileIcon = styled.div`
     color: ${(p) => p.theme.text};
     transition: 0.2s all ease-out;
     background: ${(p) => p.theme.background};
-    border: 1px solid #ccc;
   } ;
 `;
 
@@ -63,7 +62,7 @@ export const NavMenu = styled.ul`
   list-style: none;
   text-align: center;
   justify-content: space-between;
-  width: 300px;
+  /* width: 300px; */
   border-radius: 6px;
   /* background: ${(p) => p.theme.background}; */
   @media screen and (max-width: 768px) {
@@ -88,33 +87,19 @@ export const NavLinks = styled(LinkS)`
   display: flex;
   align-items: center;
   text-decoration: none;
-  border-radius: 6px;
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
-  border: 1px solid transparent;
+  /* border: 1px solid transparent; */
 
   &.active {
     transition: 0.2s all ease-out;
-    color: ${(p) => p.theme.text};
-    background: ${(p) => p.theme.background};
-    /* box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
-    /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border: 1px solid #ccc;
-  }
-  &::after{
-    /* transition: 0.2s all ease-out; */
+    color: ${(p) => p.theme.accent};
+    /* background: ${(p) => p.theme.background}; */
   }
   &:hover {
-    /* color: #000; */
+    color: ${(p) => p.theme.accent};
     transition: 0.2s all ease-out;
-    border-radius: 6px;
-    color: ${(p) => p.theme.text};
     background: ${(p) => p.theme.background};
-    border: 1px solid #ccc;
-    /* box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
-    /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
 `;

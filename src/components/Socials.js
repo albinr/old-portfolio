@@ -22,7 +22,7 @@ const Socials = () => {
                 <FaGithub size={ICON_SIZE}/>
                 <div>    
                     <h2>GitHub</h2>
-                    <p>AlbinR</p>
+                    <p>albinr</p>
                 </div>
             </a>
             <a href="https://www.linkedin.com/in/albin-ryberg-bb22341a6/" target="_blank" rel="noreferrer">

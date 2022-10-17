@@ -1,6 +1,6 @@
 // import Video from "../../videos/video.mp4";
 import Image from "../../images/albin.jpg";
-import CV from "../../files/cv.pdf";
+import CV from "../../files/Albin_Ryberg_CV.pdf";
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 import {

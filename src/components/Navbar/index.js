@@ -40,9 +40,8 @@ const Navbar = ({toggle, isOpen}) => {
                 exact="true"
                 offset={-70}
               >
-                Albin Ryberg
+                <h1>Albin</h1>
               </NavLinks>
-              <ThemeToggler/>
           </NavTitle>
           <MobileIcon onClick={toggle}>
             {isOpen ? <HiX /> : <HiMenu /> }
@@ -60,18 +59,6 @@ const Navbar = ({toggle, isOpen}) => {
                 Home
               </NavLinks>
             </NavItem>
-            {/* <NavItem>
-              <NavLinks
-                to="about"
-                smooth={true}
-                spy={true}
-                duration={500}
-                exact="true"
-                offset={-60}
-              >
-                About
-              </NavLinks>
-            </NavItem> */}
             <NavItem>
               <NavLinks
                 to="portfolio"
@@ -95,6 +82,9 @@ const Navbar = ({toggle, isOpen}) => {
               >
                 Contact
               </NavLinks>
+            </NavItem>
+            <NavItem>
+              <ThemeToggler/>
             </NavItem>
           </NavMenu>
         </NavbarContainer>

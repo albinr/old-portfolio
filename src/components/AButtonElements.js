@@ -11,8 +11,7 @@ export const AButton = styled.a`
     width: fit-content;
     align-items: center;
     transition: all 0.2s ease-in-out;
-    background: ${(p) => p.theme.background};
-    border: 1px solid #ccc;
+    background: ${(p) => p.theme.accent};
     padding: 10px 14px;
     color: ${(p) => p.theme.text};
     font-size: 1rem;

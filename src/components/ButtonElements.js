@@ -4,6 +4,7 @@ export const Button = styled.button`
     border-radius: 6px;
     white-space: nowrap;
     text-decoration: none;
+    border: none;
     outline: none;
     cursor: pointer;
     display: flex;
@@ -11,8 +12,8 @@ export const Button = styled.button`
     width: fit-content;
     align-items: center;
     transition: all 0.2s ease-in-out;
-    background: ${(p) => p.theme.background};
-    border: 1px solid #ccc;
+    background: ${(p) => p.theme.accent};
+    /* border: 1px solid #ccc; */
     padding: 10px 14px;
     color: ${(p) => p.theme.text};
     font-size: 1rem;

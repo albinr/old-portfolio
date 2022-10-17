@@ -85,7 +85,7 @@ export const HeroContent = styled.div`
   max-width: 600px;
   max-height: 600px;
   padding-left: 20px;
-  letter-spacing: 1.5px;
+  /* letter-spacing: 1.5px; */
   @media screen and (max-width: 768px) {
     padding-left: 0;
     align-items: center;
@@ -95,7 +95,7 @@ export const HeroContent = styled.div`
 `;
 
 export const Title = styled.div`
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   p{
     color: gray;
   }
@@ -159,7 +159,8 @@ export const IconBox = styled.div`
     justify-content: center;
     color: ${(p) => p.theme.text};
     :hover{
-      color: gray;
+      /* color: gray; */
+      color: ${(p) => p.theme.accent};
       /* transition: all 0.1s ease-in-out; */
     }
   }
