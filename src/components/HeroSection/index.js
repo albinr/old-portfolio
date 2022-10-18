@@ -42,7 +42,7 @@ const HeroSection = () => {
               </Title>
             </Header>
             <Text>
-              <p>I have recently graduated from the front-end
+              <p>I have recently graduated from the Front End
                 development course at KYH in Stockholm, Sweden.</p>
               <p>When im not studying or developing I like spending time with
                 friends, working out and playing some video games.</p>

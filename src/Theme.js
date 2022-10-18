@@ -6,6 +6,7 @@ const themes = {
   dark: {
     accent: "#3498DB",
     background: "#18191A",
+    reverseText: "#1c1c1c",
     text: "#FFFFFF",
     onSurface: "#3b3b3b",
     onBackground: "rgba(0, 0, 0, 0.8)",
@@ -13,6 +14,7 @@ const themes = {
   light: {
     accent: "#3498DB",
     background: "#FFFFFF",
+    reverseText: "#FFFFFF",
     text: "#1c1c1c",
     onSurface: "#cccccc",
     onBackground: "rgba(255, 255, 255, 0.8)",

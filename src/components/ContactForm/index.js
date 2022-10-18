@@ -74,7 +74,7 @@ const ContactForm = () => {
                 </li>
                 <li>
                     <Textarea
-                    placeholder="Your message"
+                    placeholder="Message"
                     id="message"
                     name="message"
                     onChange={(e) => setMessage(e.target.value)}

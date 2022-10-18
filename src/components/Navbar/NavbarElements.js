@@ -16,7 +16,7 @@ export const Nav = styled.nav`
   z-index: 100;
   transition: 0.5s all ease;
   /* border-bottom: 1px solid rgba(0, 0, 0, 0.3); */
-  border-bottom: ${({ scrollNav }) => (scrollNav ? "1px solid rgba(0, 0, 0, 0.3)"  : "1px solid rgba(0, 0, 0, 0)")};
+  border-bottom: ${({ scrollNav }) => (scrollNav ? "1px solid rgba(0, 0, 0, 0.2)"  : "1px solid rgba(0, 0, 0, 0)")};
 
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;

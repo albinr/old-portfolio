@@ -15,7 +15,7 @@ const ContactSection = () => {
       <ContactContainer id="contact">
         <ContactWrapper>
           <Title>
-            <h1>Contact me</h1> <MdChat size={40}/>
+            <h1>Contact</h1> <MdChat size={40}/>
           </Title>
           <ContactContent>
             <Socials/>
