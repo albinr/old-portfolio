@@ -15,7 +15,7 @@ const ContactForm = () => {
 
   const [name, setName] = React.useState("");
   const [email, setEmail] = React.useState("");
-  const [subject , setSubject] = React.useState("");
+  // const [subject , setSubject] = React.useState("");
   const [message, setMessage] = React.useState("");
 
   function encode(data) {
@@ -31,7 +31,7 @@ const ContactForm = () => {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", name, email, subject, message }),
+      body: encode({ "form-name": "contact", name, email, message }),
     })
       .then(() => alert("Message sent!"))
       .catch((error) => alert(error));
@@ -53,23 +53,14 @@ const ContactForm = () => {
                     name="name"
                     onChange={(e) => setName(e.target.value)}
                     />
-                {/* </li>
-                <li> */}
+                </li>
+                <li>
                     <Input
                     placeholder="Email"
                     type="email"
                     id="email"
                     name="email"
                     onChange={(e) => setEmail(e.target.value)}
-                    />
-                </li>
-                <li>
-                    <Input
-                    placeholder="Subject" 
-                    type="text"
-                    id="subject"
-                    name="subject"
-                    onChange={(e) => setSubject(e.target.value)}
                     />
                 </li>
                 <li>

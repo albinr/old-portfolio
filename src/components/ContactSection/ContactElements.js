@@ -34,7 +34,7 @@ export const Title = styled.div`
 
 export const ContactContent = styled.div`
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   width: 100%;
   height: 100%;
   align-items: center;

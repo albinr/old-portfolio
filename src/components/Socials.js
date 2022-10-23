@@ -6,7 +6,7 @@ import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const Socials = () => {
 
-    const ICON_SIZE = 60;
+    const ICON_SIZE = 30;
 
   return (
     <>
@@ -49,7 +49,7 @@ export default Socials;
 const Container = styled.div`
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -59,9 +59,10 @@ const Container = styled.div`
         justify-content: center;
         align-items: center;
         display: flex;
-        flex-direction: row;
-        width: fit-content;
-        height: fit-content;
+        flex-direction: column;
+        width: 300px;
+        /* width: fit-content;
+        height: fit-content; */
         /* padding: 10px; */
         /* margin: 6px; */
         padding: 6px;
@@ -70,6 +71,7 @@ const Container = styled.div`
         border: none;
         border-radius: 6px;
         font-size: 1rem;
+        background: ${(p) => p.theme.onSurface};
         border: 1px solid ${(p) => p.theme.background};
         &:hover{
             border: 1px solid ${(p) => p.theme.onSurface};
@@ -79,7 +81,7 @@ const Container = styled.div`
             flex-direction: column;
             padding-left: 4px;
             justify-content: center;
-            /* align-items: center; */
+            align-items: center;
             width: 100%;
             height: 100%;
 
