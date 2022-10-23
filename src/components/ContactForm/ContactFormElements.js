@@ -43,9 +43,6 @@ export const UL = styled.ul`
       float: right;
     };
     li {
-    input{:nth-child(2){
-    margin-left: 10px;
-    }};
     padding: 0;
     margin: 0;
     list-style: none;
@@ -55,15 +52,6 @@ export const UL = styled.ul`
     position: relative;
     display: flex;
     flex-direction: row;
-    @media screen and (max-width: 480px) {
-        flex-direction: column;
-        input{
-        :nth-child(2){
-            margin-left: 0;
-            margin-top: 10px;
-            };
-        };
-    };
     };
 `;
 
