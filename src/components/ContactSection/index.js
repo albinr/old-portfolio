@@ -1,7 +1,5 @@
 import React from "react";
 import {
-  ContactWrapper,
-  // Title,
   ContactContent,
 } from "./ContactElements";
 import { Title, Section, Wrapper } from "../GeneralStyle";
