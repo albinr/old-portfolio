@@ -18,11 +18,10 @@ const PortfolioSection = () => {
   return (
     <>
     <Section id="portfolio"> 
-        <Title>
-            <h1>Portfolio</h1> <HiTerminal size={40}/>
-        </Title>
         <Wrapper>
-          
+          <Title>
+            <h2>Portfolio</h2> <HiTerminal size={30}/>
+          </Title>
           <ProjectsContainer>
             <Card 
               imageUrl={portfolioImg} 

@@ -16,8 +16,6 @@ export const ContactWrapper = styled.div`
   flex-direction: column;
   width: 100%;
   height: 100%;
-  /* align-items: center; */
-  /* justify-content: center; */
 `;
 
 export const Title = styled.div`
@@ -34,18 +32,18 @@ export const Title = styled.div`
 
 export const ContactContent = styled.div`
   display: flex;
-  /* flex-direction: column; */
+  flex-wrap: wrap-reverse;
+  flex-direction: row;
   width: 100%;
   height: 100%;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 
 `;
 
 export const ContentBox = styled.div`
   width: 100%;
   @media (min-width: 768px) {
-    /* width: 50%; */
     width: 100%;
   }
 `;
@@ -58,13 +56,9 @@ export const Input = styled.input`
   padding: 16px;
   margin-bottom: 12px;
   border: none;
-  /* border: 1px solid ${(p) => p.theme.text}; */
   border-radius: 6px;
   font-size: 1.2rem;
   outline: none;
-  /* @media screen and (max-width: 768px) {
-    width: 100%;
-  } */
 `;
 
 export const Textarea = styled.textarea`
@@ -75,24 +69,14 @@ export const Textarea = styled.textarea`
   color: ${(p) => p.theme.text};
   margin-bottom: 12px;
   border: none;
-  /* border: 1px solid ${(p) => p.theme.text}; */
   border-radius: 6px;
   font-size: 1.2rem;
-  /* @media screen and (max-width: 800px) {
-    width: 100%;
-  } */
-
 `;
 
 export const ContactForm = styled.form`
-  /* width: 350px; */
   display: flex;
   width: 100%;
   flex-direction: column;
-  /* @media screen and (max-width: 800px) {
-    justify-content: center;
-    align-items: center;
-  } */
 `;
 
 export const NameEmail = styled.div`
@@ -102,7 +86,6 @@ export const NameEmail = styled.div`
 
 
 export const Socials = styled.div`
-  /* width: 350px; */
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;

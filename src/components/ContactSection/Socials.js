@@ -52,7 +52,7 @@ const Container = styled.div`
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    max-width: 600px;
     margin: 0 0 20px 0;
     a{
         text-decoration: none;
@@ -60,21 +60,17 @@ const Container = styled.div`
         align-items: center;
         display: flex;
         flex-direction: column;
-        width: 300px;
-        /* width: fit-content;
-        height: fit-content; */
-        /* padding: 10px; */
+        min-width: 300px;
         margin: 6px;
         padding: 20px;
-        /* background: ${(p) => p.theme.onSurface}; */
         color: ${(p) => p.theme.text};
-        border: none;
         border-radius: 12px;
         font-size: 1rem;
         background: ${(p) => p.theme.onSurface};
-        border: 1px solid ${(p) => p.theme.accent};
+        border: 1px solid ${(p) => p.theme.border};
         &:hover{
-            border: 1px solid ${(p) => p.theme.onSurface};
+            transition: all 0.2s ease-in-out;
+            filter: brightness(0.8);
         }
         div{
             display: flex;

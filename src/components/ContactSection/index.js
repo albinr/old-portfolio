@@ -11,10 +11,10 @@ const ContactSection = () => {
   return (
     <>
       <Section id="contact">
+        <Wrapper>
           <Title>
-            <h1>Contact</h1> <MdChat size={40}/>
+            <h2>Contact</h2> <MdChat size={30}/>
           </Title>
-          <Wrapper>
           <ContactContent>
             <Socials/>
             <ContactForm />

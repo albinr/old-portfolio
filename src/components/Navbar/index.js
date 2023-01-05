@@ -99,7 +99,7 @@ const Navbar = ({toggle, isOpen}) => {
                 spy={true}
                 duration={500}
                 exact="true"
-                offset={-60}
+                offset={-70}
               >
                 Contact
               </NavLinks>

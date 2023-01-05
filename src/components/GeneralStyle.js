@@ -22,14 +22,15 @@ export const Wrapper = styled.div`
 
 export const Title = styled.div`
   width: 100%;
-  font-size: 1.3rem;
+  font-size: 1rem;
+  color:${(p) => p.theme.accent};
   /* border-bottom: 1px solid rgba(0, 0, 0, 0.3); */
   /* border-bottom: 1px solid ${(p) => p.theme.onSurface}; */
-  margin: 20px 0 0 0;
+  margin: 30px 0;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
-  h1{
+  h2{
     margin-right: 10px;
   }
 `;
