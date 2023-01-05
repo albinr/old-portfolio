@@ -1,7 +1,7 @@
 import React from "react";
 import {
   ProjectImg,
-  ProjectInfo,
+  InfoCard,
   ButtonBox,
   ProjectDiv,
   ProjectWrapper,
@@ -13,24 +13,24 @@ import { AButton } from "../AButtonElements";
 export const Card = ({ title, subtitle, imageUrl, description, gitLink, demoLink }) => {
   return (
     <>
-      <ProjectWrapper>
-        <ProjectDiv>
+    <ProjectWrapper>
+      <ProjectDiv>
           <ProjectImg
             alt="gallery"
             src={imageUrl}
           />
-            <ProjectInfo>
-              <div>
-                <h2>{subtitle}</h2>
-                <h1>{title}</h1>
-                <p>{description}</p>
-              </div>
-              <ButtonBox>
-                <AButton href={gitLink}><GitIcon size={20}/>GitHub</AButton>
-                {demoLink ? <AButton href={demoLink}>Demo</AButton> : null}
-              </ButtonBox>
-            </ProjectInfo>
-          </ProjectDiv>
+          <InfoCard>
+            <div>
+            <h3>{title}</h3>
+            <h4>{subtitle}</h4>
+            <p>{description}</p>
+            </div>
+            <ButtonBox>
+            <AButton href={gitLink}><GitIcon size={20}/>GitHub</AButton>
+            {demoLink ? <AButton href={demoLink}>Demo</AButton> : null}
+            </ButtonBox>
+            </InfoCard>
+        </ProjectDiv>
         </ProjectWrapper>
     </>
   );

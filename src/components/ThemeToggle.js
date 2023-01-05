@@ -8,7 +8,7 @@ const Moon = styled(FaRegMoon)`
     margin: 0 1rem;
     height: 100%;
     cursor: pointer;
-    color: ${(p) => p.theme.text};
+    color: ${(p) => p.theme.gray};
     :hover {
         color: ${(p) => p.theme.accent};
         transition: 0.2s all ease-out;
@@ -18,7 +18,7 @@ const Sun = styled(FaRegSun)`
     margin: 0 1rem;
     height: 100%;
     cursor: pointer;
-    color: ${(p) => p.theme.text};
+    color: ${(p) => p.theme.gray};
     :hover {
         color: ${(p) => p.theme.accent};
         transition: 0.2s all ease-out;
@@ -30,9 +30,9 @@ export const ThemeToggler = () => {
     return (
     <>
         {theme === "dark" ? (
-        <Moon size={22}  onClick={() => switchTheme("light")} />
+        <Moon size={20}  onClick={() => switchTheme("light")} />
         ) : (
-        <Sun size={22}  onClick={() => switchTheme("dark")} />
+        <Sun size={20}  onClick={() => switchTheme("dark")} />
         )}
     </>
     );

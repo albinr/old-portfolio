@@ -2,7 +2,7 @@
 import Image from "../../images/albin.jpg";
 import CV from "../../files/Albin_Ryberg_CV.pdf";
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
-
+import { ThemeToggler } from "../ThemeToggle";
 import {
   BtnBox,
   HeroContainer,
@@ -64,6 +64,7 @@ const HeroSection = () => {
                   <FaTwitter size={30}/>
                 </a>
               </IconBox>
+              {/* <ThemeToggler/> */}
           </HeroContent>
         </InfoBox>
       </HeroWrapper>

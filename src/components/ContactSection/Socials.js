@@ -64,22 +64,22 @@ const Container = styled.div`
         /* width: fit-content;
         height: fit-content; */
         /* padding: 10px; */
-        /* margin: 6px; */
-        padding: 6px;
+        margin: 6px;
+        padding: 20px;
         /* background: ${(p) => p.theme.onSurface}; */
         color: ${(p) => p.theme.text};
         border: none;
-        border-radius: 6px;
+        border-radius: 12px;
         font-size: 1rem;
         background: ${(p) => p.theme.onSurface};
-        border: 1px solid ${(p) => p.theme.background};
+        border: 1px solid ${(p) => p.theme.accent};
         &:hover{
             border: 1px solid ${(p) => p.theme.onSurface};
         }
         div{
             display: flex;
             flex-direction: column;
-            padding-left: 4px;
+            /* padding-left: 4px; */
             justify-content: center;
             align-items: center;
             width: 100%;

@@ -1,10 +1,11 @@
 import React from "react";
 // import { Button } from "../ButtonElements";
-import { AboutContainer, AboutWrapper, AboutText } from "./AboutElements";
+import { AboutWrapper, AboutText } from "./AboutElements";
+import { Section } from "../GeneralStyle";
 
 const AboutSection = () => {
   return (
-    <AboutContainer id="about">
+    <Section id="about">
       <AboutWrapper>
         <AboutText>
           <h1>About Me</h1>
@@ -20,7 +21,7 @@ const AboutSection = () => {
           <p>I enjoy tinkering with things like keyboards and stuff too. </p>
         </AboutText>
       </AboutWrapper>
-    </AboutContainer>
+    </Section>
   );
 };
 

@@ -21,6 +21,7 @@ export const AboutWrapper = styled.div`
 `;
 
 export const AboutText = styled.div`
+  color: ${(p) => p.theme.text};
   margin: auto;
   border-radius: 10px;
   margin-bottom: 6%;

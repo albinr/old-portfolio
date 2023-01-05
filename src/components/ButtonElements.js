@@ -1,10 +1,36 @@
 import styled from 'styled-components';
 
+// export const Button = styled.button`
+//     border-radius: 6px;
+//     white-space: nowrap;
+//     text-decoration: none;
+//     border: none;
+//     outline: none;
+//     cursor: pointer;
+//     display: flex;
+//     justify-content: center;
+//     width: fit-content;
+//     align-items: center;
+//     transition: all 0.2s ease-in-out;
+//     background: ${(p) => p.theme.accent};
+//     /* border: 1px solid #ccc; */
+//     padding: 10px 14px;
+//     color: ${(p) => p.theme.text};
+//     font-size: 1rem;
+//     &:hover {
+//         transition: all 0.2s ease-in-out;
+//         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+//         color: ${(p) => p.theme.background};
+//         background: ${(p) => p.theme.text};
+//     }
+
+// `;
+
 export const Button = styled.button`
     border-radius: 6px;
+    font-weight: bold;
     white-space: nowrap;
     text-decoration: none;
-    border: none;
     outline: none;
     cursor: pointer;
     display: flex;
@@ -12,16 +38,13 @@ export const Button = styled.button`
     width: fit-content;
     align-items: center;
     transition: all 0.2s ease-in-out;
-    background: ${(p) => p.theme.accent};
-    /* border: 1px solid #ccc; */
+    border: 1px solid ${(p) => p.theme.border};
+    background: ${(p) => p.theme.buttonBg};
     padding: 10px 14px;
     color: ${(p) => p.theme.text};
-    font-size: 1rem;
     &:hover {
         transition: all 0.2s ease-in-out;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        color: ${(p) => p.theme.background};
-        background: ${(p) => p.theme.text};
+        filter: brightness(0.8);
     }
 
 `;

@@ -5,7 +5,6 @@ import {
   NavMenu,
   NavItem,
   NavLinks,
-  NavTitle,
   MobileIcon,
 } from "./NavbarElements";
 import {ThemeToggler} from "../ThemeToggle";
@@ -31,7 +30,7 @@ const Navbar = ({toggle, isOpen}) => {
     <>
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
-          <NavTitle>
+          {/* <NavTitle>
               <NavLinks
                 to="home"
                 smooth={true}
@@ -40,12 +39,10 @@ const Navbar = ({toggle, isOpen}) => {
                 exact="true"
                 offset={-70}
               >
-                <h1>Albin</h1>
+                <p>Ryberg</p>
               </NavLinks>
-          </NavTitle>
-          <MobileIcon onClick={toggle}>
-            {isOpen ? <HiX /> : <HiMenu /> }
-          </MobileIcon>
+          </NavTitle> */}
+          
           <NavMenu>
             <NavItem>
               <NavLinks
@@ -59,6 +56,30 @@ const Navbar = ({toggle, isOpen}) => {
                 Home
               </NavLinks>
             </NavItem>
+            <NavItem>
+              <NavLinks
+                to="about"
+                smooth={true}
+                spy={true}
+                duration={500}
+                exact="true"
+                offset={-70}
+              >
+                About
+              </NavLinks>
+            </NavItem>
+            {/* <NavItem>
+              <NavLinks
+                to="skills"
+                smooth={true}
+                spy={true}
+                duration={500}
+                exact="true"
+                offset={-60}
+              >
+                Skills
+              </NavLinks>
+            </NavItem> */}
             <NavItem>
               <NavLinks
                 to="portfolio"
@@ -83,10 +104,14 @@ const Navbar = ({toggle, isOpen}) => {
                 Contact
               </NavLinks>
             </NavItem>
-            <NavItem>
-              <ThemeToggler/>
-            </NavItem>
+            {/* <NavItem>
+              
+            </NavItem> */}
           </NavMenu>
+          <ThemeToggler/>
+          <MobileIcon onClick={toggle}>
+            {isOpen ? <HiX /> : <HiMenu /> }
+          </MobileIcon>
         </NavbarContainer>
       </Nav>
     </>

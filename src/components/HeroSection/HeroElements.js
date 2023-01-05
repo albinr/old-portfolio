@@ -73,8 +73,10 @@ export const ImageAr = styled.img`
   width: 100%;
   height: 100%;
   border-radius: 10px;
+  border: 1px solid ${(p) => p.theme.border};
   -o-object-fit: cover;
   object-fit: cover;
+
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 `;
 

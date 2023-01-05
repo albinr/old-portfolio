@@ -2,14 +2,16 @@ import React from "react";
 import {
   PortfolioContainer,
   PortfolioWrapper,
-  Title,
+  // Title,
   ProjectsContainer,
 } from "./PortfolioElements";
+import { Section, Title, Wrapper } from "../GeneralStyle";
 import portfolioImg from "./portfolio.png";
 import bevnewsImg from "./bevnews.jpg";
 import quireImg from "./quire.jpg";
 import cargoImg from "./cargo.jpg";
 import gainsImg from "./gains.png";
+import fediverseImg from "./fediverse.png"
 import calculatorImg from "./calculator.png";
 // import portfolioImg from "../../images/portfolio.png";
 // import bevnewsImg from "../../images/bevnews.jpg";
@@ -24,11 +26,12 @@ import Card from "../Cards";
 const PortfolioSection = () => {
   return (
     <>
-      <PortfolioContainer id="portfolio">
-        <PortfolioWrapper>
-          <Title>
+    <Section id="portfolio"> 
+        <Title>
             <h1>Portfolio</h1> <HiTerminal size={40}/>
-          </Title>
+        </Title>
+        <Wrapper>
+          
           <ProjectsContainer>
             <Card 
               imageUrl={portfolioImg} 
@@ -68,9 +71,15 @@ const PortfolioSection = () => {
               subtitle="React" 
               description="A simple calculator that I created using React. With a tutorial." 
               gitLink="https://github.com/AlbinR/react-calculator"/>
+              <Card 
+              imageUrl={fediverseImg}
+              title="Fediverse"
+              subtitle="" 
+              description="I have some expreience setting up Fediverse" 
+              gitLink="https://github.com/AlbinR/react-calculator"/>
           </ProjectsContainer>
-        </PortfolioWrapper>
-      </PortfolioContainer>
+        </Wrapper>
+      </Section>
     </>
   );
 };
