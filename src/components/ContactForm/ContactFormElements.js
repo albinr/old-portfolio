@@ -6,7 +6,7 @@ export const Input = styled.input`
   width: 100%;
   height: 50px;
   padding: 0 20px;
-  border: 0;
+  border: 1px solid ${(p) => p.theme.border};
   border-radius: 6px;
   margin:0;
   font-size: 1.2rem;
@@ -19,23 +19,22 @@ export const Textarea = styled.textarea`
   width: 100%;
   height: 150px;
   padding: 20px;
-  border: none;
+  border: 1px solid ${(p) => p.theme.border};
   border-radius: 6px;
   font-size: 1.2rem;
   outline: none;
 `;
 
 export const Form = styled.form`
-  /* width: 350px; */
   padding: 10px;
   display: flex;
   max-width: 500px;
   width: 100%;
   flex-direction: column;
-  /* @media screen and (max-width: 800px) {
-    justify-content: center;
-    align-items: center;
-  } */
+  h3{
+    margin: 10px 0;
+    font-size: 1.5rem;
+  }
 `;
 
 export const UL = styled.ul`

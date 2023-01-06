@@ -44,6 +44,7 @@ const ContactForm = () => {
         name="contact"
         onSubmit={handleSubmit}
         >
+          <h3>Send me a message!</h3>
             <UL>
                 <li>
                     <Input
