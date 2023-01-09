@@ -9,7 +9,6 @@ export const Input = styled.input`
   border: 1px solid ${(p) => p.theme.border};
   border-radius: 6px;
   margin:0;
-  font-size: 1.2rem;
   outline: none;
 `;
 
@@ -21,7 +20,6 @@ export const Textarea = styled.textarea`
   padding: 20px;
   border: 1px solid ${(p) => p.theme.border};
   border-radius: 6px;
-  font-size: 1.2rem;
   outline: none;
 `;
 
@@ -32,8 +30,7 @@ export const Form = styled.form`
   width: 100%;
   flex-direction: column;
   h3{
-    margin: 10px 0;
-    font-size: 1.5rem;
+    margin: 20px 0;
   }
 `;
 
@@ -46,7 +43,7 @@ export const UL = styled.ul`
     padding: 0;
     margin: 0;
     list-style: none;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     overflow: hidden;
     clear: both;
     position: relative;

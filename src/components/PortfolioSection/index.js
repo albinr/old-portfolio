@@ -64,8 +64,8 @@ const PortfolioSection = () => {
               <Card 
               imageUrl={fediverseImg}
               title="Fediverse"
-              subtitle="" 
-              description="I have some expreience setting up Fediverse" 
+              subtitle="Ghost, Cloudron.io, Mastodon, Ubuntu" 
+              description="I have some expreience setting up Fediverse for my family and myself." 
               gitLink="https://github.com/AlbinR/react-calculator"/>
           </ProjectsContainer>
         </Wrapper>

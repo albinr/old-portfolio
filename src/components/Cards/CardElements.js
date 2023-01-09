@@ -44,25 +44,16 @@ export const InfoCard = styled.div`
   border: 1px solid ${(p) => p.theme.border};
   justify-content: space-between;
   overflow: hidden;
-  /* border-bottom-right-radius: 8px;
-  border-bottom-left-radius: 8px; */
   padding: 12px;
   background: ${(p) => p.theme.onSurface};
-  /* position: relative; */
-  /* opacity: 0;
-  padding: 10px;
-  z-index: 6;
-  width: 100%;
-  height: 100%;
-  color: ${(p) => p.theme.text};
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  &:hover {
-    opacity: 1;
-    background: ${(p) => p.theme.onBackground};
-    backdrop-filter: blur(4px);
-  } */
+  h3{
+  }
+  h4{
+  }
+  p{
+    color: #8b949e;
+  }
+
 `;
 
 export const ButtonBox = styled.div`
