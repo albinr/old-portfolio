@@ -1,10 +1,3 @@
 # My Portfolio Page
 
-> Hello, my name is Albin Ryberg, and this is my portfolio website .
-
----
-
-## About this website.
-
-
----
+> Hello, my name is Albin Ryberg, and this is my portfolio website.
