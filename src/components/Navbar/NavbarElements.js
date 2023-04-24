@@ -2,39 +2,39 @@ import styled from "styled-components";
 import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
-  background: ${({ scrollNav }) => (scrollNav ?  (p) => p.theme.nav : "none")};
-  height: 70px;
-  margin-top: -70px;
+  /* background: ${({ scrollNav }) => (scrollNav ?  (p) => p.theme.nav : "none")}; */
+  background-color: ${(p) => p.theme.nav};
+  backdrop-filter: blur(10px);
+  height: 100px;
+  margin-top: -100px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  font-size: 1.1rem;
   position: sticky;
   top: 0;
   z-index: 100;
-  transition: 0.5s all ease;
-  border-bottom: 1px solid ${({ scrollNav }) => (scrollNav ?  (p) => p.theme.border : "transparent")};
+  padding: 0 50px;
+  /* border-bottom: 1px solid ${({ scrollNav }) => (scrollNav ?  (p) => p.theme.border : "transparent")}; */
   @media screen and (max-width: 768px) {
-    justify-content: flex-end;
+    justify-content: space-between;
+    padding: 0 25px;
+    
   };
   
-  @media screen and (max-width: 960px) {
+  /* @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
-  }
+  } */
 `;
 
 export const NavbarContainer = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  height: 60px;
   z-index: 1;
   width: 100%;
-  padding: 0 20px;
-  max-width: 1100px;
-  @media screen and (max-width: 768px) {
+  /* @media screen and (max-width: 768px) {
     justify-content: flex-end;
-  };
+  }; */
 `;
 
 export const MobileIcon = styled.div`
@@ -68,14 +68,23 @@ export const NavMenu = styled.ul`
 `;
 
 export const NavItem = styled.li`
-  height: 40px;
+  /* height: 40px; */
 `;
 
-export const NavTitle = styled.div`
+export const NavTitle = styled(LinkS)`
+  color:${({ theme }) => theme.gray};
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+  text-decoration: none;
+  cursor: pointer;
+
+  &.active {
+    transition: 0.2s all ease-out;
+    color: ${(p) => p.theme.accent};
+  }
+  &:hover {
+    color: ${(p) => p.theme.accent};
+    transition: 0.2s all ease-out;
+  }
 `;
 
 export const NavLinks = styled(LinkS)`
@@ -83,8 +92,7 @@ export const NavLinks = styled(LinkS)`
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding: 0 1rem;
-  height: 100%;
+  padding: 10px;
   cursor: pointer;
 
   &.active {

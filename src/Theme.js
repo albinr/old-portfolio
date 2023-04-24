@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { ThemeProvider, createGlobalStyle } from "styled-components";
+import styled, { ThemeProvider, createGlobalStyle } from "styled-components";
 import { ThemeContext } from "./contexts/ThemeStore";
 
 const themes = {
@@ -11,7 +11,7 @@ const themes = {
     text: "#f0f6fc",
     onSurface: "#0C1116",
     onBackground: "rgba(0, 0, 0, 0.8)",
-    nav: "#171B23",
+    nav: "rgb(1,4,9,0.8)",
     border:"#30363D",
     buttonBg:"#20272D",
     
@@ -21,25 +21,42 @@ const themes = {
     background: "#F7F8FB",
     reverseText: "#FFFFFF",
     gray:"#808080",
-    // text: "#1c1c1c",
     text:"#24292f",
     onSurface: "#FEFFFE",
     onBackground: "rgba(255, 255, 255, 0.8)",
-    nav:"#FEFFFE",
+    nav:"rgb(247,248,251,0.8)",
     border:"#D0D7DE",
     buttonBg:"#F7F9FA",
   },
 };
 
+export const Main = styled.main`
+  padding: 0 150px;
+`;
+
 const GlobalStyle = createGlobalStyle`
   * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    transition: all 0.2s;
+    font-family: 'Inter', sans-serif;
+    &::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+    background: ${(p) => p.theme.gray};
+    border-radius: 10px;
+    border: 3px solid ${(p) => p.theme.background};
+    }
+    &::-webkit-scrollbar-track {
+    background: ${(p) => p.theme.background};
+    }
   }
   body{
     background: ${(p) => p.theme.background};
   }
+
   
 `;
 
@@ -56,15 +73,4 @@ const Theme = ({ children }) => {
 export default Theme;
 
 
-  // &::-webkit-scrollbar {
-  // width: 10px; /* Mostly for vertical scrollbars */
-  // height: 10px; /* Mostly for horizontal scrollbars */
-  // }
-  // &::-webkit-scrollbar-thumb { /* Foreground */
-  // background: ${(p) => p.theme.text};
-  // /* background: gray; */
-  // border-radius: 6px;
-  // }
-  // &::-webkit-scrollbar-track { /* Background */
-  // background: ${(p) => p.theme.background};
-  // }
+  

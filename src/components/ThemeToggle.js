@@ -5,7 +5,7 @@ import { FaRegSun, FaRegMoon } from "react-icons/fa";
 import styled from "styled-components";
 
 const Moon = styled(FaRegMoon)`
-    margin: 0 1rem;
+    margin: 0 0 0 10px;
     height: 100%;
     cursor: pointer;
     color: ${(p) => p.theme.gray};
@@ -15,7 +15,7 @@ const Moon = styled(FaRegMoon)`
     } 
 `;
 const Sun = styled(FaRegSun)`
-    margin: 0 1rem;
+    margin: 0 0 0 10px;
     height: 100%;
     cursor: pointer;
     color: ${(p) => p.theme.gray};

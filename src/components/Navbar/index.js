@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import {
   Nav,
   NavbarContainer,
   NavMenu,
   NavItem,
+  NavTitle,
   NavLinks,
   MobileIcon,
 } from "./NavbarElements";
@@ -12,37 +13,19 @@ import { HiX, HiMenu } from "react-icons/hi";
 
 
 const Navbar = ({toggle, isOpen}) => {
-  const [scrollNav, setScrollNav] = useState(false);
-
-  const changeNav = () => {
-    if (window.scrollY >= 60) {
-      setScrollNav(true);
-    } else {
-      setScrollNav(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", changeNav);
-  }, []);
-
   return (
     <>
-      <Nav scrollNav={scrollNav}>
+      <Nav>
         <NavbarContainer>
-          {/* <NavTitle>
-              <NavLinks
-                to="home"
-                smooth={true}
-                spy={true}
-                duration={500}
-                exact="true"
-                offset={-70}
-              >
-                <p>Ryberg</p>
-              </NavLinks>
-          </NavTitle> */}
-          
+          <NavTitle
+          to="home"
+          smooth={true}
+          spy={true}
+          duration={500}
+          exact="true"
+          offset={-100}>
+                <p>albinr</p>
+          </NavTitle>
           <NavMenu>
             <NavItem>
               <NavLinks
@@ -51,7 +34,7 @@ const Navbar = ({toggle, isOpen}) => {
                 spy={true}
                 duration={500}
                 exact="true"
-                offset={-70}
+                offset={-100}
               >
                 Home
               </NavLinks>
@@ -63,23 +46,11 @@ const Navbar = ({toggle, isOpen}) => {
                 spy={true}
                 duration={500}
                 exact="true"
-                offset={-70}
+                offset={-100}
               >
                 About
               </NavLinks>
             </NavItem>
-            {/* <NavItem>
-              <NavLinks
-                to="skills"
-                smooth={true}
-                spy={true}
-                duration={500}
-                exact="true"
-                offset={-60}
-              >
-                Skills
-              </NavLinks>
-            </NavItem> */}
             <NavItem>
               <NavLinks
                 to="portfolio"
@@ -87,7 +58,7 @@ const Navbar = ({toggle, isOpen}) => {
                 spy={true}
                 duration={500}
                 exact="true"
-                offset={-70}
+                offset={-100}
               >
                 Portfolio
               </NavLinks>
@@ -99,16 +70,13 @@ const Navbar = ({toggle, isOpen}) => {
                 spy={true}
                 duration={500}
                 exact="true"
-                offset={-70}
+                offset={-100}
               >
                 Contact
               </NavLinks>
             </NavItem>
-            {/* <NavItem>
-              
-            </NavItem> */}
+            <ThemeToggler/>
           </NavMenu>
-          <ThemeToggler/>
           <MobileIcon onClick={toggle}>
             {isOpen ? <HiX /> : <HiMenu /> }
           </MobileIcon>

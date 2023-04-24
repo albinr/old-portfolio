@@ -5,6 +5,7 @@ import {
   SidebarMenu,
   SidebarLink,
 } from "./SidebarElements";
+import {ThemeToggler} from "../ThemeToggle";
 
 const Sidebar = ({ isOpen, toggle }) => {
   return (
@@ -44,6 +45,10 @@ const Sidebar = ({ isOpen, toggle }) => {
             offset={-70}onClick={toggle}>
             Contact
           </SidebarLink>
+          <SidebarLink>
+            <ThemeToggler/>
+          </SidebarLink>
+          
         </SidebarMenu>
       </SidebarWrapper>
     </SidebarContainer>
