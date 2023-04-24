@@ -6,8 +6,6 @@ import AboutSection from "../components/AboutSection";
 import PortfolioSection from "../components/PortfolioSection";
 import ContactSection from "../components/ContactSection";
 import Footer from "../components/Footer";
-import { Main } from "../Theme";
-
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -18,12 +16,12 @@ const Home = () => {
     <>
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar isOpen={isOpen} toggle={toggle} />
-      <Main>
+      <main>
         <HeroSection />
         {/* <AboutSection/>
         <PortfolioSection />
         <ContactSection /> */}
-      </Main>
+      </main>
       {/* <Footer/> */}
     </>
   );

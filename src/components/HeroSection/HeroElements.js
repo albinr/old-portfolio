@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const HeroContainer = styled.section`
-  background: ${(p) => p.theme.background};
+  /* background: ${(p) => p.theme.background};
   color: ${(p) => p.theme.text};
   /* display: flex;
   flex-direction: column;
@@ -17,13 +17,13 @@ export const HeroContainer = styled.section`
   min-height: 100vh;
   height: 100vh;
   padding: 0px;
-  margin: 0 auto;
+  margin: 0 auto; */
 `;
 
 export const Text = styled.div`
- padding-top: 10px;
+ /* padding-top: 10px;
  font-size: 1.3rem;
   @media screen and (max-width: 768px) {
     font-size: 1rem;
-  }
+  } */
 `;

@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
-import styled, { ThemeProvider, createGlobalStyle } from "styled-components";
+import  { ThemeProvider} from "styled-components";
 import { ThemeContext } from "./contexts/ThemeStore";
+import GlobalStyle from "./GlobalStyle";
 
 const themes = {
   dark: {
@@ -29,40 +30,6 @@ const themes = {
     buttonBg:"#F7F9FA",
   },
 };
-
-export const Main = styled.main`
-  margin: 0 150px;
-    /* margin: 0px auto;
-    width: 100%;
-    max-width: 1600px;
-    min-height: 100vh; */
-`;
-
-const GlobalStyle = createGlobalStyle`
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Inter', sans-serif;
-    &::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-    }
-    &::-webkit-scrollbar-thumb {
-    background: ${(p) => p.theme.gray};
-    border-radius: 10px;
-    border: 3px solid ${(p) => p.theme.background};
-    }
-    &::-webkit-scrollbar-track {
-    background: ${(p) => p.theme.background};
-    }
-  }
-  body{
-    background: ${(p) => p.theme.background};
-  }
-
-  
-`;
 
 const Theme = ({ children }) => {
   const { theme } = useContext(ThemeContext);
