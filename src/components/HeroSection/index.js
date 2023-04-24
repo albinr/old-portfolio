@@ -1,8 +1,5 @@
-import {
-  HeroContainer,
-  Title,
-  Text,
-} from "./HeroElements";
+import styled from "styled-components";
+
 
 const HeroSection = () => {
   return (
@@ -10,7 +7,6 @@ const HeroSection = () => {
       <h1>Hello!</h1>
       <h2>I'm Albin Ryberg</h2>
       <h3>A Front End Web-Developer</h3>
-
     </section>
   );
 };
