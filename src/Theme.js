@@ -31,7 +31,11 @@ const themes = {
 };
 
 export const Main = styled.main`
-  padding: 0 150px;
+  margin: 0 150px;
+    /* margin: 0px auto;
+    width: 100%;
+    max-width: 1600px;
+    min-height: 100vh; */
 `;
 
 const GlobalStyle = createGlobalStyle`

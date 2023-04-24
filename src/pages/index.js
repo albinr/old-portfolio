@@ -20,11 +20,11 @@ const Home = () => {
       <Navbar isOpen={isOpen} toggle={toggle} />
       <Main>
         <HeroSection />
-        <AboutSection/>
+        {/* <AboutSection/>
         <PortfolioSection />
-        <ContactSection />
+        <ContactSection /> */}
       </Main>
-      <Footer/>
+      {/* <Footer/> */}
     </>
   );
 };
