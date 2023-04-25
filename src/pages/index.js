@@ -19,10 +19,10 @@ const Home = () => {
       <main>
         <HeroSection />
         <AboutSection/>
-        {/* <PortfolioSection /> */}
-        {/* <ContactSection /> */}
+        <PortfolioSection />
+        <ContactSection />
       </main>
-      {/* <Footer/> */}
+      <Footer/>
     </>
   );
 };
