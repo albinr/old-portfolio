@@ -18,9 +18,9 @@ const Home = () => {
       <Navbar isOpen={isOpen} toggle={toggle} />
       <main>
         <HeroSection />
-        {/* <AboutSection/>
-        <PortfolioSection />
-        <ContactSection /> */}
+        <AboutSection/>
+        {/* <PortfolioSection /> */}
+        {/* <ContactSection /> */}
       </main>
       {/* <Footer/> */}
     </>

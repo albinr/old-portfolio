@@ -8,7 +8,7 @@ const Nav = styled.nav`
   background-color: ${(p) => p.theme.nav};
   backdrop-filter: blur(10px);
   height: 100px;
-  /* margin-top: -100px; */
+  margin-top: -100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -110,7 +110,7 @@ const Navbar = ({toggle, isOpen}) => {
           spy={true}
           duration={500}
           exact="true"
-          offset={-100}>
+          offset={0}>
                 <p>albinr</p>
           </NavTitle>
           <NavMenu>
@@ -121,7 +121,7 @@ const Navbar = ({toggle, isOpen}) => {
                 spy={true}
                 duration={500}
                 exact="true"
-                offset={-100}
+                offset={0}
               >
                 Home
               </NavLinks>
@@ -133,7 +133,7 @@ const Navbar = ({toggle, isOpen}) => {
                 spy={true}
                 duration={500}
                 exact="true"
-                offset={-100}
+                offset={0}
               >
                 About
               </NavLinks>
