@@ -11,7 +11,10 @@ const HeroSectionStyles = styled.section`
     padding: 0px;
   h2,
   h3{
-    font-size: clamp(40px, 8vw, 70px);
+    font-size: clamp(20px, 8vw, 70px);
+  }
+  p{
+    max-width: 800px;
   }
 `;
 
@@ -21,8 +24,8 @@ const HeroSection = () => {
       <div>
         <h1>Hello!</h1>
         <h2>I'm Albin Ryberg</h2>
-        <h3>A Front End Developer</h3>
-        <h3>Based in Stockholm</h3>
+        <h3>Front End Developer</h3>
+        <h3>From Stockholm</h3>
         <p>I have recently graduated from the Front End development course at KYH in Stockholm, Sweden.
         When im not studying or developing I like spending time with friends, working out and playing some video games.
         I enjoy tinkering with things like mechanical keyboards and stuff too.</p>

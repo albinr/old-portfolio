@@ -6,6 +6,9 @@ import AboutSection from "../components/AboutSection";
 import PortfolioSection from "../components/PortfolioSection";
 import ContactSection from "../components/ContactSection";
 import Footer from "../components/Footer";
+import SocialList from "../components/Socials";
+
+
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -16,6 +19,7 @@ const Home = () => {
     <>
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar isOpen={isOpen} toggle={toggle} />
+      <SocialList/>
       <main>
         <HeroSection />
         <AboutSection/>

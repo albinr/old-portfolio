@@ -136,6 +136,7 @@ const GlobalStyle = createGlobalStyle`
   }
   p {
     margin: 0 0 15px 0;
+    font-size: 20px;
     &:last-child,
     &:last-of-type {
       margin: 0;

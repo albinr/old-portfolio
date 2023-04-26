@@ -17,9 +17,7 @@ const Nav = styled.nav`
   z-index: 100;
   padding: 0 50px;
   @media screen and (max-width: 768px) {
-    justify-content: space-between;
-    padding: 0 25px;
-    
+    padding: 0 25px;  
   };
 `;
 
