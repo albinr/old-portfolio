@@ -6,6 +6,10 @@ const GlobalStyle = createGlobalStyle`
     width: 100%;
     scroll-behavior: smooth;
   }
+  @font-face {
+    font-family: 'Montserrat', sans-serif;
+    src: url(../public/Montserrat-VariableFont_wght.ttf);
+  }
 
   *,
   *:before,
@@ -51,8 +55,7 @@ const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     background-color: ${(p) => p.theme.background};
     color: ${(p) => p.theme.text};
-    /* font-family: var(--font-sans); */
-    /* font-size: var(--fz-xl); */
+    font-family: 'Montserrat', sans-serif;
     line-height: 1.3;
     @media (max-width: 480px) {
       /* font-size: var(--fz-lg); */
@@ -136,7 +139,7 @@ const GlobalStyle = createGlobalStyle`
   }
   p {
     margin: 0 0 15px 0;
-    font-size: 20px;
+    /* font-size: 20px; */
     &:last-child,
     &:last-of-type {
       margin: 0;
