@@ -41,8 +41,8 @@ const GlobalStyle = createGlobalStyle`
     background: ${(p) => p.theme.background};
   }
   ::-webkit-scrollbar-thumb {
-    background-color: v;
-    border: ${(p) => p.theme.background};
+    background-color: ${(p) => p.theme.gray};
+    border: 3px solid ${(p) => p.theme.background};
     border-radius: 10px;
   }
 
@@ -114,6 +114,7 @@ const GlobalStyle = createGlobalStyle`
   section {
     display: flex;
     align-items: center;
+    justify-content: center;
     min-height: 100vh;
     margin: 0 auto;
     padding: 100px 0;

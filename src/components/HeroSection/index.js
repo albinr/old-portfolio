@@ -1,36 +1,71 @@
-import styled from "styled-components";
-
-const HeroSectionStyles = styled.section`
-    display: flex;
-    -webkit-box-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    flex-direction: column;
-    align-items: flex-start;
-    height: 100vh;
-    padding: 0px;
-  h2,
-  h3{
-    font-size: clamp(20px, 8vw, 70px);
-  }
-  p{
-    max-width: 800px;
-  }
-`;
+import Image from "../../images/albin.jpg";
+import CV from "../../files/Albin_Ryberg_CV.pdf";
+import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import {
+  BtnBox,
+  HeroContainer,
+  HeroWrapper,
+  ImageAr,
+  ImageContainer,
+  SmallImg,
+  InfoBox,
+  HeroContent,
+  Header,
+  Title,
+  Text,
+  IconBox,
+  Line,
+  DlIcon,
+} from "./style";
+import { AButton } from "../AButtonElements";
 
 const HeroSection = () => {
   return (
-    <HeroSectionStyles id="home">
-      <div>
-        <h1>Hello!</h1>
-        <h2>I'm Albin Ryberg</h2>
-        <h3>Front End Developer</h3>
-        <h3>From Stockholm</h3>
-        <p>I have recently graduated from the Front End development course at KYH in Stockholm, Sweden.
-        When im not studying or developing I like spending time with friends, working out and playing some video games.
-        I enjoy tinkering with things like mechanical keyboards and stuff too.</p>
-      </div>
-    </HeroSectionStyles>
+    <section id="home">
+      <HeroWrapper>
+        <InfoBox>
+          <ImageContainer>
+            <ImageAr src={Image} alt="Albin Ryberg"/>
+          </ImageContainer>
+          <HeroContent>
+            <Header>
+              <SmallImg>
+                <ImageAr src={Image} alt="Albin Ryberg"/>
+              </SmallImg>
+              <Title>
+                  <p>HELLO!</p>
+                  <h1>I'm Albin Ryberg,</h1>
+                  <h1>a Front End Developer</h1>
+                  <h1>from Stockholm.</h1>
+              </Title>
+            </Header>
+            <Text>
+              <p>I have recently graduated from the Front End
+                development course at KYH in Stockholm, Sweden.</p>
+              <p>When im not studying or developing I like spending time with
+                friends, working out and playing some video games.</p>
+              <p>I enjoy tinkering with things like mechanical keyboards and stuff too.</p>
+            </Text>
+              <BtnBox>
+                <AButton href={CV} download>Download CV<DlIcon/></AButton>
+              </BtnBox>
+              <IconBox>
+                <a target="_blank" href="https://www.linkedin.com/in/albin-ryberg-bb22341a6/" rel="noreferrer">
+                  <FaLinkedin size={30}/>
+                </a>
+                <Line/>
+                <a target="_blank" href="https://github.com/AlbinR" rel="noreferrer">
+                  <FaGithub size={30}/>
+                </a>
+                <Line/>
+                <a target="_blank" href="https://twitter.com/AlbinRyberg" rel="noreferrer">
+                  <FaTwitter size={30}/>
+                </a>
+              </IconBox>
+          </HeroContent>
+        </InfoBox>
+      </HeroWrapper>
+    </section>
   );
 };
 

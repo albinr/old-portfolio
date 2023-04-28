@@ -1,12 +1,12 @@
 import { useContext } from "react";
 import { ThemeContext } from "../contexts/ThemeStore";
-import { FaRegSun, FaRegMoon } from "react-icons/fa";
+import { FaRegLightbulb, FaLightbulb } from "react-icons/fa";
 // import { HiOutlineSun , HiOutlineMoon } from 'react-icons/hi';
 import styled from "styled-components";
 
-const Moon = styled(FaRegMoon)`
+const Dark = styled(FaRegLightbulb)`
     margin: 0 0 0 10px;
-    height: 100%;
+    /* height: 100%; */
     cursor: pointer;
     color: ${(p) => p.theme.gray};
     :hover {
@@ -14,9 +14,9 @@ const Moon = styled(FaRegMoon)`
         transition: 0.2s all ease-out;
     } 
 `;
-const Sun = styled(FaRegSun)`
+const Light = styled(FaLightbulb)`
     margin: 0 0 0 10px;
-    height: 100%;
+    /* height: 100%; */
     cursor: pointer;
     color: ${(p) => p.theme.gray};
     :hover {
@@ -30,9 +30,9 @@ export const ThemeToggler = () => {
     return (
     <>
         {theme === "dark" ? (
-        <Moon size={20}  onClick={() => switchTheme("light")} />
+        <Dark size={20}  onClick={() => switchTheme("light")} />
         ) : (
-        <Sun size={20}  onClick={() => switchTheme("dark")} />
+        <Light size={20}  onClick={() => switchTheme("dark")} />
         )}
     </>
     );

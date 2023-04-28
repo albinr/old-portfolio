@@ -1,106 +1,25 @@
-import React from "react";
-import styled from "styled-components";
+import React, { useState, useEffect } from "react";
 import {ThemeToggler} from "../ThemeToggle";
 import { HiX, HiMenu } from "react-icons/hi";
-import { Link as LinkS } from "react-scroll";
-
-const Nav = styled.nav`
-  background-color: ${(p) => p.theme.nav};
-  backdrop-filter: blur(10px);
-  height: 100px;
-  margin-top: -100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  padding: 0 50px;
-  @media screen and (max-width: 768px) {
-    padding: 0 25px;  
-  };
-`;
-
-const NavbarContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 1;
-  width: 100%;
-`;
-
-const MobileIcon = styled.div`
-  display: none;
-
-  @media screen and (max-width: 768px) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-items: center;
-    border-radius: 6px;
-    font-size: 1.7rem;
-    padding: 4px;
-    cursor: pointer;
-    color: ${(p) => p.theme.text};
-    transition: 0.2s all ease-out;
-    background: ${(p) => p.theme.background};
-  } ;
-`;
-
-const NavMenu = styled.ul`
-  display: flex;
-  align-items: center;
-  list-style: none;
-  text-align: center;
-  justify-content: space-between;
-  border-radius: 6px;
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
-`;
-
-const NavItem = styled.li`
-`;
-
-const NavTitle = styled(LinkS)`
-  color:${({ theme }) => theme.gray};
-  display: flex;
-  text-decoration: none;
-  cursor: pointer;
-
-  &.active {
-    transition: 0.2s all ease-out;
-    color: ${(p) => p.theme.accent};
-  }
-  &:hover {
-    color: ${(p) => p.theme.accent};
-    transition: 0.2s all ease-out;
-  }
-`;
-
-const NavLinks = styled(LinkS)`
-  color:${({ theme }) => theme.gray};
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  padding: 10px;
-  cursor: pointer;
-
-  &.active {
-    transition: 0.2s all ease-out;
-    color: ${(p) => p.theme.accent};
-  }
-  &:hover {
-    color: ${(p) => p.theme.accent};
-    transition: 0.2s all ease-out;
-  }
-`;
-
+import {Nav, NavbarContainer, NavTitle, NavMenu, NavItem, NavLinks, MobileIcon} from "./style";
 
 const Navbar = ({toggle, isOpen}) => {
+  const [scrollNav, setScrollNav] = useState(false);
+
+  const changeNav = () => {
+    if (window.scrollY >= 100) {
+      setScrollNav(true);
+    } else {
+      setScrollNav(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", changeNav);
+  }, []);
   return (
     <>
-      <Nav>
+      <Nav scrollNav={scrollNav}>
         <NavbarContainer>
           <NavTitle
           to="home"
@@ -109,7 +28,7 @@ const Navbar = ({toggle, isOpen}) => {
           duration={500}
           exact="true"
           offset={0}>
-                <p>albinr</p>
+                <p>ALBIN.DEV</p>
           </NavTitle>
           <NavMenu>
             <NavItem>

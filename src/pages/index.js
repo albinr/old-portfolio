@@ -11,15 +11,15 @@ import SocialList from "../components/Socials";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
-
   const toggle = () => {
     setIsOpen(!isOpen);
   };
+  
   return (
     <>
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar isOpen={isOpen} toggle={toggle} />
-      <SocialList/>
+      {/* <SocialList/> */}
       <main>
         <HeroSection />
         <AboutSection/>
