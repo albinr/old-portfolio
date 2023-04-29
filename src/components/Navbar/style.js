@@ -2,14 +2,16 @@ import styled from "styled-components";
 import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
-  background-color: ${(p) => p.theme.nav};
+  background-color: ${(p) => p.theme.background};
+  border-bottom: 1px solid ${(p) => p.theme.background};
   backdrop-filter: blur(10px);
-  height: 100px;
+  height: 80px;
   margin-top: -100px;
   display: flex;
   justify-content: center;
   align-items: center;
   position: sticky;
+  font-weight: 800;
   top: 0;
   z-index: 100;
   padding: 0 50px;
@@ -52,6 +54,8 @@ export const NavMenu = styled.ul`
   text-align: center;
   justify-content: space-between;
   border-radius: 6px;
+  padding: 0;
+  margin: 0;
   @media screen and (max-width: 768px) {
     display: none;
   }

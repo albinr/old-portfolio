@@ -17,19 +17,6 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: inherit;
   }
 
-  :focus {
-    outline: 2px dashed var(--green);
-    outline-offset: 3px;
-  }
-  :focus:not(:focus-visible) {
-    outline: none;
-    outline-offset: 0px;
-  }
-  :focus-visible {
-    outline: 2px dashed var(--green);
-    outline-offset: 3px;
-  }
-
   html {
     scrollbar-width: thin;
     scrollbar-color: ${(p) => p.theme.gray};
@@ -134,9 +121,6 @@ const GlobalStyle = createGlobalStyle`
   h5,
   h6 {
     margin: 0 0 10px 0;
-    font-weight: 600;
-    color: var(--lightest-slate);
-    line-height: 1.1;
   }
   p {
     margin: 0 0 15px 0;

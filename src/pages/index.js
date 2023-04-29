@@ -1,12 +1,12 @@
 import React, {useState} from "react";
 import Sidebar from "../components/Sidebar";
-import HeroSection from "../components/HeroSection";
 import Navbar from "../components/Navbar";
-import AboutSection from "../components/AboutSection";
-import PortfolioSection from "../components/PortfolioSection";
-import ContactSection from "../components/ContactSection";
-import Footer from "../components/Footer";
-import SocialList from "../components/Socials";
+// import HeroSection from "../components/HeroSection";
+// import AboutSection from "../components/AboutSection";
+// import PortfolioSection from "../components/PortfolioSection";
+// import ContactSection from "../components/ContactSection";
+// import Footer from "../components/Footer";
+// import SocialList from "../components/Socials";
 
 
 const Home = () => {
@@ -21,12 +21,12 @@ const Home = () => {
       <Navbar isOpen={isOpen} toggle={toggle} />
       {/* <SocialList/> */}
       <main>
-        <HeroSection />
+        {/* <HeroSection />
         <AboutSection/>
         <PortfolioSection />
-        <ContactSection />
+        <ContactSection /> */}
       </main>
-      <Footer/>
+      {/* <Footer/> */}
     </>
   );
 };
